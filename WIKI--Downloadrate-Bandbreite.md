@@ -2,7 +2,7 @@
 
 ---
 
-** Vergleichstabelle, Megabyte/s : Megabit/s : Kilobit/s **
+**Vergleichstabelle, Megabyte/s : Megabit/s : Kilobit/s**
 
 - Dantenübertragung / Datenverbindung / Internet Geschwindigkeit
 
