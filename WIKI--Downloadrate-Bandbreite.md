@@ -2,9 +2,7 @@
 
 ---
 
-* [**Bandbreite Vergleichstabelle, Megabyte/s zu Megabit/s**](Bandbreite.ods?fileId=21806447)
-
-<https://www.speedtestx.de/tabelle-datenrate.html>
+** Vergleichstabelle, Megabyte/s : Megabit/s : Kilobit/s **
 
 - Dantenübertragung / Datenverbindung / Internet Geschwindigkeit
 
