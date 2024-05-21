@@ -8,9 +8,9 @@
 
 <https://openspeedtest.com/>
 
-**MB/s** (Megabyte pro Sekunde)
+**MB/s** =  (MBps, MByte/s, MB/s)  (Megabyte pro Sekunde)
 
-**MBit/s** (Megabit pro Sekunde)
+**MBit/s** = (MB/s, MBit/s) (Megabit pro Sekunde)
 
 **KBit/s** (Kilobit pro Sekunde)
 
