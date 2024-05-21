@@ -2,7 +2,7 @@
 
 ---
 
-* [**Bandbreite Vergleichstabelle, Megabyte zu Megabit**](Bandbreite.ods?fileId=21806447)
+* [**Bandbreite Vergleichstabelle, Megabyte/s zu Megabit/s**](Bandbreite.ods?fileId=21806447)
 
 <https://www.speedtestx.de/tabelle-datenrate.html>
 
