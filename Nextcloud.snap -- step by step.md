@@ -4,7 +4,7 @@
 You have decided to set up your own [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) as a safe and secure home for your data, **that's great!**
 
 Before getting started be aware of what you expect from your Nextcloud instance and what requirements have to be met to fulfill your needs. 
-Beside available/required hardware there are some other aspects to consider too like;
+Aside from the (installation requirements](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Installation-requirements) there are some other aspects to consider too like;
 + number of users
 + storage requirements
 + power efficiency
