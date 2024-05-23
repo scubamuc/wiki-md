@@ -1,6 +1,18 @@
-# Guide to your own Nextcloud
+# Your own Nextcloud snap
 
 ## 1. Usage and requirements
+You have decided to set up your own Nextcloud as a safe and secure home for your data, that's great!
+
+Before getting started be aware of what you expect from your Nextcloud instance and what requirements have to be met to fulfill that expectation. 
+Besides available/required hardware there are some other aspects to consider like;
++ number of users
++ storage requirements
++ power efficiency
++ network connectivity
++ backup / redundancy
++ etc...
+
+
 
 ## 2. Network
 ### 2.1 Server / Host
