@@ -24,16 +24,9 @@ the routers public **IPv4** address must be available via DNS (**D**omain **N**a
 + enabled Ports **80** and **443** for **IPv4** address
 + DNS provider connecting to public **IPv4** address
 
-## 3. Domain, DNS provider and dynamic DNS provider
-While some folks own a TLD (**T**op **L**evel **D**omain) and will create a subdomain pointing to the host, like `cloud.domain.com`. 
+## 3. Domain and DNS
+While some folks own a TLD (**T**op **L**evel **D**omain) and will create a subdomain pointing to the host, like `cloud.domain.com`. Other folks may need a DNS provider for a domain name pointing to the routers public **IPv4** address, something like `cloud.user.dnsprovider.xyz`. 
 
-Other folks will need a DNS provider to acquire a domain name. All you really need is a name for your **IPv4** to be connected to, something like `cloud.user.dnsprovider.xyz` 
-which will be the address you enter into the browser to reach your Nextcloud instance in the internet. 
+That will be the address you enter into the browser to reach your Nextcloud instance in the internet. 
 
 There are plenty DNS providers out there to choose from. Some come at a price, some are free.
-
-### 3.1 FQDN
-+ FQDN (**F**ully **Q**alified **D**omain **N**ame)
-### 3.2 DNS
-+ DNS (**D**omain **N**ame **S**ystem)
-### 3.3 Encryption
