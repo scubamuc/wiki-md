@@ -1,7 +1,7 @@
 # Your own Nextcloud snap
 
 ## 1. Usage and requirements
-You have decided to set up your own Nextcloud as a safe and secure home for your data, that's great!
+You have decided to set up your own Nextcloud snap as a safe and secure home for your data, that's great!
 
 Before getting started be aware of what you expect from your Nextcloud instance and what requirements have to be met to fulfill that expectation. 
 Besides available/required hardware there are some other aspects to consider like;
