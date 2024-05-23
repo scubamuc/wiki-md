@@ -1,10 +1,17 @@
-# Step by Step Guide to your own Nextcloud
+# Guide to your own Nextcloud
 
 ## Requirements
-### Usage
-### Internet connection
-### Domain
-### Dynamic DNS
-### Router
-### Hardware
+
+### 1. Usage
+
+### 2. Network
+#### 2.1 Server / Host
+#### 2.2 Router
+
+### 3. Domain and DNS
+#### 3.1 FQDN
+#### 3.2 DNS
+#### 3.3 Encryption
+
+### 4. Hardware
 ### [SCUBA's Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
