@@ -12,9 +12,9 @@ Beside available/required hardware there are some other aspects to consider too 
 + backup / redundancy
 + etc...
 
-See expamle [SCUBA's Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
-
 It will be necessary to do research. The onus is on you. Read the docs and wikis, do the basics, take notes and consider your options.
+
+See expamle: [SCUBA's Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
 
 ## 2. Network
 ### 2.1 Server / Host
