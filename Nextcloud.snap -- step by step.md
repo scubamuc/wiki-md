@@ -1,4 +1,4 @@
-# Your own Nextcloud snap
+# Nextcloud snap, step by step
 
 ## 1. Usage and requirements
 You have decided to set up your own [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) as a safe and secure home for your data, **that's great!**
