@@ -17,7 +17,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 See expamle: [Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
 
 ## 2. Network
-### 2.1 Server / Host
+### 2.1 Host
 ### 2.2 Router
 
 ## 3. Domain and DNS
