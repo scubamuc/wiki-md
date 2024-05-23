@@ -30,3 +30,7 @@ While some folks own a TLD (**T**op **L**evel **D**omain) and will create a subd
 That will be the address you enter into the browser to reach your Nextcloud instance in the internet. 
 
 There are plenty DNS providers out there to choose from. Some come at a price, some are free.
+
+----
+
+Once completed, continue to [configure Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap)
