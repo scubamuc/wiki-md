@@ -20,7 +20,7 @@ See expamle: [Nextcloud snap server setup & specs](https://github.com/scubamuc/s
 Assuming a home network where the host running Nextcloud snap acquires a static **IPv4** address from DHCP/Router and the required ports **80** and **443** are enabled and internet facing, 
 the routers public **IPv4** address must be available via DNS (**D**omain **N**ame **S**ystem) request. 
 
-+ static local **IPv4** from DHCP/Router
++ static host **IPv4** from DHCP/Router
 + enabled Ports **80** and **443** for **IPv4** address
 + DNS provider connecting to public **IPv4** address
 
