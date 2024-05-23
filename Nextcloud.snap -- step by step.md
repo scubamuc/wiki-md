@@ -3,16 +3,17 @@
 ## 1. Usage and requirements
 You have decided to set up your own Nextcloud snap as a safe and secure home for your data, that's great!
 
-Before getting started be aware of what you expect from your Nextcloud instance and what requirements have to be met to fulfill that expectation. 
-Besides available/required hardware there are some other aspects to consider like;
+Before getting started be aware of what you expect from your Nextcloud instance and what requirements have to be met to fulfill your needs. 
+Beside available/required hardware there are some other aspects to consider too like;
 + number of users
 + storage requirements
 + power efficiency
 + network connectivity
 + backup / redundancy
 + etc...
+Here is an expamle [SCUBA's Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
 
-
+It will be necessary to do research. The onus is on you. Read, read, read the docs and wikis, do the basics, take notes and consider the options.
 
 ## 2. Network
 ### 2.1 Server / Host
@@ -22,6 +23,3 @@ Besides available/required hardware there are some other aspects to consider lik
 ### 3.1 FQDN
 ### 3.2 DNS
 ### 3.3 Encryption
-
-## 4. Hardware
-### [SCUBA's Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
