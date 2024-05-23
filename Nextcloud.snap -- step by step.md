@@ -17,10 +17,23 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 See expamle: [Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
 
 ## 2. Network
-### 2.1 Host
-### 2.2 Router
+Assuming a home network where the host running Nextcloud snap acquires a static **IPv4** address from DHCP/Router and the required ports **80** and **443** are enabled and internet facing, 
+the **IPv4** address must be publicly available via DNS request. 
 
-## 3. Domain and DNS
++ static local **IPv4** from DHCP/Router
++ enabled Ports **80** and **443** for **IPv4** address
++ DNS provider connecting to public **IPv4** address
+
+## 3. Domain, DNS provider and dynamic DNS provider
+While some folks own a TLD (**T**op **L**evel **D**omain) and will create a subdomain pointing to the host, like `cloud.domain.com`. 
+
+Other folks will need a DNS provider to acquire a domain name. All you really need is a name for your **IPv4** to be connected to, something like `cloud.user.dnsprovider.xyz` 
+which will be the address you enter into the browser to reach your Nextcloud instance in the internet. 
+
+There are plenty DNS (**D**omain **N**ame **S**ystem) providers out there to choose from. Some come at a price, some are free.
+
 ### 3.1 FQDN
++ FQDN (**F**ully **Q**alified **D**omain **N**ame)
 ### 3.2 DNS
++ DNS (**D**omain **N**ame **S**ystem)
 ### 3.3 Encryption
