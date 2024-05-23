@@ -1,6 +1,6 @@
 # Guide to your own Nextcloud
 
-## 1. Usage
+## 1. Usage and requirements
 
 ## 2. Network
 ### 2.1 Server / Host
