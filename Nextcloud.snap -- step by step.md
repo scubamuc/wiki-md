@@ -12,7 +12,7 @@ Aside from the [installation requirements](https://github.com/nextcloud-snap/nex
 + backup & redundancy
 + etc...
 
-Based on your requirements and specs you should plan your setup. Do some research, read the docs and [Wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki) and consider your options.
+Based on your requirements and specs you should plan your setup. Do some research, read the docs and [Wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki) and consider the options.
 
 See expamle: [SCUBA's Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
 
