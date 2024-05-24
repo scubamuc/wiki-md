@@ -25,7 +25,7 @@ the routers public **IPv4** address must be available via DNS (**D**omain **N**a
 + DNS provider connecting to public **IPv4** address
 
 ## 3. Domain name and DNS
-While some folks own a TLD (**T**op **L**evel **D**omain) and will create a subdomain pointing to the host, like `cloud.mydomain.com`, other folks may need a DNS provider to get a *domain name* pointing to the routers' public **IPv4** address, something like `cloud.mydomain.mydnsprovider.xyz`. That will be the address you enter into the browser to reach your Nextcloud instance.
+While some folks own a TLD (**T**op **L**evel **D**omain) and will create a subdomain pointing to the host, like `cloud.mydomain.com`, other folks may need a DNS provider to get a *domain name* pointing to the routers' public **IPv4** address like `cloud.mydomain.mydnsprovider.xyz`. That will be the address you enter into the browser to reach your Nextcloud instance.
 
 There are plenty DNS providers out there to choose from. Some come at a price, some are free. Often you will have a choice of domain names, sometimes you have to take what is available. Do some research and make the right choice for you.
 
