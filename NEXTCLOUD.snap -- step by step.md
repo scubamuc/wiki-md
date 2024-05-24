@@ -12,7 +12,7 @@ Aside from the [installation requirements](https://github.com/nextcloud-snap/nex
 + backup & redundancy
 + etc...
 
-Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-snap/nextcloud-snap) and the [Wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki). Expamle: [Nextcloud snap server setup & specs](https://github.com/scubamuc/scubamuc.github.io)
+Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-snap/nextcloud-snap) and the [Wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki).
 
 Continue with [**Installation**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)
 
