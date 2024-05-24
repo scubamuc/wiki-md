@@ -14,7 +14,7 @@ Aside from the [installation requirements](https://github.com/nextcloud-snap/nex
 
 Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-snap/nextcloud-snap) and the [Wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki).
 
-Continue with [**Installation**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)
+Continue with [**installation**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)
 
 ## 2. Network
 Assuming a home network where the host running Nextcloud snap acquires a static **IPv4** address from DHCP/Router and the required ports **80** and **443** are enabled and internet facing, 
