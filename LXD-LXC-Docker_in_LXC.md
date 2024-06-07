@@ -1,8 +1,8 @@
 # Run Docker container inside LXC host container
 
-Be aware that this setup is basically running a container inside a container. While this has some advantages for LXC admins, it requires careful configuration. 
-The default volume format for LXC is VFS and Docker supports BTRFS natively, thus it will be necessary to create an new BTRFS volume for Docker containers inside LXC. 
-In addition `security nesting` must be enabled to enable Docker to "run as root" on the LXC host, otherwise writing persistent data will be impossible. 
+Be aware that this setup is basically running a container inside a container. While this has some advantages, it requires careful configuration. 
+The default volume format for LXC is ZFS and Docker supports BTRFS natively, thus it will be necessary to create an new BTRFS volume for Docker containers inside LXC. 
+In addition `security nesting` must be enabled to allow Docker to "run as root" on the LXC host, otherwise writing persistent data will be impossible. 
 
 The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with both options enabled and simply assign the profile to LXC containers.
 
@@ -27,12 +27,12 @@ devices:
     type: disk
 ``` 
 
-## VFS vs. BTRFS
-the default volume format for LXC containers is VFS
+## ZFS vs. BTRFS
+the default volume format for LXC containers is ZFS
 
 ```⚠️ Docker will not run well with the default zfs file system```
 
-Running Docker inside an LXC on a VFS volume will prohibit persistent data. Thus BTRFS is required.
+Running Docker inside an LXC on a ZFS volume will prohibit persistent data. Thus a BTRFS is required for Docker on LXC.
 
 ### create a new btrfs storage pool
 
