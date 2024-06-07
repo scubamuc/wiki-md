@@ -57,10 +57,3 @@ devices:
     pool: DOCKPOOL
     type: disk
 ``` 
-
-
-
-the option may be set per container if required:
-
-`lxc config set {container-name} security.nesting true`
-
