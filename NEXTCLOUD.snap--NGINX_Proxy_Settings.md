@@ -23,8 +23,21 @@
 
 copy & paste in advanced settings
 ```
-location = /.well-known/carddav {return 301 $scheme://$host:$server_port/remote.php/dav;}
-location = /.well-known/caldav {return 301 $scheme://$host:$server_port/remote.php/dav;}
+location /.well-known/carddav {
+    return 301 $scheme://$host/remote.php/dav;
+}
+
+location /.well-known/caldav {
+    return 301 $scheme://$host/remote.php/dav;
+}
+
+location /.well-known/webfinger {
+    return 301 $scheme://$host/index.php/.well-known/webfinger;
+}
+
+location /.well-known/nodeinfo {
+    return 301 $scheme://$host/index.php/.well-known/nodeinfo;
+}
 ```
 ----
 ### Configure Nextcloud-snap
