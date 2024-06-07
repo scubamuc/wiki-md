@@ -4,7 +4,7 @@ Be aware that this setup is basically running a container inside a container. Wh
 The default volume format for LXC is ZFS and Docker supports BTRFS natively, thus it will be necessary to create an new BTRFS volume for Docker containers inside LXC. 
 In addition `security nesting` must be enabled to allow Docker to "run as root" on the LXC host, otherwise writing persistent data will be impossible. 
 
-The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with both options defined and simply assign the profile to LXC running Docker containers.
+The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with these options defined and simply assign the profile to LXC running Docker containers.
 
 ## Profile example
 
