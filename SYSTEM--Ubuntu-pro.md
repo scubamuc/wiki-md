@@ -38,4 +38,4 @@ Ubuntu Unattended Upgrades (UAU) is an automated tool that allows you to manage 
 
 UAU can be configured to automatically install updates at specific times, such as overnight when system usage is typically low or during off-peak hours. This helps reduce downtime and potential interruptions to your workflow. Additionally, UAU provides a log file that details the status of each update installation, which can be useful for auditing purposes or troubleshooting any issues that may arise during the upgrade process.
 
-See my Wiki for [Unattended upgrades](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)
+See my Wiki for [Unattended upgrades](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--Unattended_Upgrades.md)
