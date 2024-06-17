@@ -114,19 +114,19 @@ apt install docker.io docker-compose
 
 ## Portainer deployment
 
-1. First, create the volume that Portainer Server will use to store its database:
+1. create the volume that Portainer Server will use to store its database:
 
 ```
 docker volume create portainer_data
 ```
 
-1. Then, download and install the Portainer Server container:
+2. download and install the Portainer Server container:
 
 ```
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 ```
 
-1. Check if its running
+3. Check if its running
 
 ```
 docker ps
