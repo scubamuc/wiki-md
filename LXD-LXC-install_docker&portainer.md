@@ -114,7 +114,7 @@ apt install docker.io docker-compose
 
 ## Portainer deployment
 
-1. create the volume that Portainer Server will use to store its database:
+1. create the volume that Portainer Server will use to store its data:
 
 ```
 docker volume create portainer_data
@@ -132,8 +132,10 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 docker ps
 ```
 
-1. Login to Portainer:
+4. Login to Portainer:
 
 <https://IP.of.lxc.container:9443>
 
-TIP: Portainer Login = admin and a looong password
+> TIP: Portainer Login = `admin` and a looong (min. 12 chars) password
+> 
+> You may enter your preferred `adminuser` and a looong (min. 12 chars) password as you are effectively creating a new account
