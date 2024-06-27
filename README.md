@@ -8,4 +8,4 @@ here are some of my personal notes and rough drafts for official [wikis](https:/
 
 Remember these are notes... so use any commands and scripts **at own risk**. Adapt them to your needs if you like, but be careful and double check!
 
-If you find the information you need, thats great.
+If you find the information you need, thats great and you're welcome.
