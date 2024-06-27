@@ -6,6 +6,6 @@
 
 here are some of my personal notes and rough drafts for official [wikis](https://github.com/nextcloud-snap/nextcloud-snap/wiki). Some are in german, some have been translated in english and others are mixed.
 
-Remember these are notes... so use any commands **at own risk**. Adapt them to your needs if you like, but be careful and double check!
+Remember these are notes... so use any commands and scripts **at own risk**. Adapt them to your needs if you like, but be careful and double check!
 
 If you find the information you need, thats great.
