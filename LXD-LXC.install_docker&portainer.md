@@ -12,7 +12,7 @@ the default volume format for LXC containers is ZFS
 
 `⚠️ Docker will not run well with the default zfs file system`
 
-Running Docker inside an LXC on a ZFS volume will prohibit persistent data. Thus a BTRFS is required for Docker on LXC.
+Running Docker inside an LXC on a ZFS volume will prohibit persistent data. Thus a BTRFS volume is required for Docker on LXC.
 
 #### create a new btrfs storage pool
 
