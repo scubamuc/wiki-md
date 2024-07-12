@@ -26,7 +26,7 @@ Edit the configuration file:
 sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
-Anything after a double slash “//” is a comments and has no effect. To “enable” a line, remove the double slash at the beginning of the line (replace with nothing or with spaces to keep alignment).
+Anything after a double slash “//” is a comment and has no effect. To “enable” a line, remove the double slash at the beginning of the line (replace with nothing or with spaces to keep alignment).
 
 The most important: uncomment the “updates” line by deleting the two slashes at the beginning of it:
 
