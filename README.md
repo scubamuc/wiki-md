@@ -4,8 +4,8 @@
     <img width="20%" src="https://avatars.githubusercontent.com/u/54933878?s=400&u=31132eb8a567528f005143a0d339174848a06df8&v=4" alt="scubamuc">
 </p>
 
-here are some of my personal notes and rough drafts for official [wikis](https://github.com/nextcloud-snap/nextcloud-snap/wiki). Some are in german, some have been translated in english and others are mixed.
+here are some of my personal notes and rough drafts for official [wikis](https://github.com/nextcloud-snap/nextcloud-snap/wiki). Some are in german, others are in english and a few are mixed.
 
-Remember these are notes... so use any commands and scripts **at own risk**. Adapt them to your needs if you like, but be careful and double check!
+>Remember these are notes... so use any commands and scripts **at own risk**. Adapt them to your needs if you like, but be careful and double check!
 
-If you find the information you need, thats great and you're welcome.
+If you find the information you need, thats great and you're welcome 🤿 👌
