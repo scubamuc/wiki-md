@@ -43,7 +43,7 @@ Snap snapshots may be scripted, see example below
 
 6\. create root-cronjob for weekly execution ( ``` 0 1 * * 0 su $USER /home/$USER/bin/snapsnapshot.sh ``` )
 
-```
+```bash
 #!/bin/bash
 ##############################################################
 # Script description  -scubamuc- https://scubamuc.github.io/ #
