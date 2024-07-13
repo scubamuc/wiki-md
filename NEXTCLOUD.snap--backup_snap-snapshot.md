@@ -116,7 +116,7 @@ exit
 2. **Discover snapshot-ID** using `snap saved`
 
 3. **Restore snapshot** 
-```
+```bash
 sudo snap restore "snapshot-ID"
 ```
 
