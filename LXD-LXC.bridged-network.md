@@ -1,5 +1,7 @@
 # Configure LXD/LXC bridged network
 
+there are several way to configure bridged networking on Linux/Ubuntu. Why bridged networking? Well, ``macvlan` is easier to configure by simply changing one option in the default LXD config, but you will not be able to reach the container via SSH from the LXD host. To enable "true" virtual networking ability bridged network is the way to go. Some will argue about this... 
+
 ## Create network bridge with nmcli
 `nmcli` - package is preinstalled on Ubuntu server
 
