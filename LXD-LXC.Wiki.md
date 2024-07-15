@@ -2,6 +2,12 @@
 
 <https://documentation.ubuntu.com/lxd/en/latest/#>
 
+1. <https://linuxcontainers.org/lxd/getting-started-cli/>
+2. <https://blog.jrehkemper.de/index.php/lxd-linux-container/#SnapInstallation>
+3. <https://discourse.world/h/2020/04/09/Basic-LXD-Features-Linux-Container-Systems#vybor-faylovoy-sistemy-dlya-storage-pool-navigaciya>
+4. https://gist.github.com/berndbausch/a6835150c7a26c88048763c0bd739be6
+5. <https://stgraber.org/2016/03/19/lxd-2-0-your-first-lxd-container-312/>
+
 # Useful LXD commands
 
 Summarized from <https://stgraber.org/2016/03/19/lxd-2-0-your-first-lxd-container-312/>.
