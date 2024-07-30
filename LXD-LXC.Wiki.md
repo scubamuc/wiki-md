@@ -41,8 +41,8 @@ lxc list status=stopped
 This creates and starts a container.
 
 ```
-lxc launch ubuntu:14.04 CONTAINERNAME   # image and container names are optional 
-lxc launch ubuntu:14.04/armhf armcont   # specific architecture
+lxc launch ubuntu:22.04 CONTAINERNAME   # image and container names are optional 
+lxc launch ubuntu:22.04/armhf armcont   # specific architecture
 lxc launch images:alpine/3.3/amd64      # unsupported images: source
 ```
 
