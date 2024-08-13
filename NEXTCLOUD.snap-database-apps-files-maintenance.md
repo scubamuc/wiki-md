@@ -28,8 +28,51 @@ sudo nextcloud.occ files:cleanup
 ```
 
 > [!TIP]
->An example is the preview generator app which may be install to generate previws for all sorts of media files. 
-Installing the app and generating previews takes up space and slows down system increasing cpu load. In such a 
-case, the "cached" files will need to be removed from the system drive to free up space. You can safely remove
-the `/var/snap/nextcloud/common/nextcloud/data/appdata_occredxxxx/preview/` directory after uninstalling the app. 
-Default previews will be regenerated withou the need of the preview generator app taking up much less space.
+>For example the 'preview generator app' which is sometimes installed manually to generate previews for all sorts of media files. 
+Generating previews with the app gobbles up disk space blowing up the database and increasing CPU load. The "cached" files may want 
+to be removed from the system drive to free up space. You can safely delete the `/var/snap/nextcloud/common/nextcloud/data/appdata_occredxxxx/preview/` directory **after uninstalling** the 'preview generator app'. The file previews will be regenerated with
+'default nextcloud previews' without requiring the 'preview generator app' saving disk space and CPU load.
+
+> [!IMPORTANT]
+> Be patient, regenerating default previews may take a while depending on system resources, files quantity or external media to be scanned!
+
+----
+
+# Database, clear 'undo' history
+
+Nextcloud Snap MySQL keeps an 'undo' history (`temp_undo_00x.ibu`) which may become duplicated and grow over time gobbling up disk space. The MySQL 'undo' files in `/var/snap/nextcloud/current/mysql` may needed clearing...
+
+> [!WARNING]
+> This is like open heart surgery... be **safe** and **backup** your database!
+> ```
+> sudo nextcloud.export -d
+> ```
+
+> [!CAUTION]
+> Access the database with the mysql client:
+> ```bash 
+> sudo nextcloud.mysql-client
+>```
+>
+> and run the below commands
+> 
+> ```bash
+> use nextcloud;
+> 
+> CREATE UNDO TABLESPACE temp_undo_003 ADD DATAFILE 'temp_undo_003.ibu';
+> 
+> ALTER UNDO TABLESPACE innodb_undo_001 SET INACTIVE;
+> SELECT NAME, STATE FROM INFORMATION_SCHEMA.INNODB_TABLESPACES WHERE NAME = 'innodb_undo_001';
+> ALTER UNDO TABLESPACE innodb_undo_001 SET ACTIVE;
+> 
+> ALTER UNDO TABLESPACE innodb_undo_002 SET INACTIVE;
+> SELECT NAME, STATE FROM INFORMATION_SCHEMA.INNODB_TABLESPACES WHERE NAME = 'innodb_undo_002';
+> ALTER UNDO TABLESPACE innodb_undo_002 SET ACTIVE;
+> 
+> ALTER UNDO TABLESPACE temp_undo_003 SET INACTIVE;
+> DROP UNDO TABLESPACE temp_undo_003;
+> ```
+
+
+
+
