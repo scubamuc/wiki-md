@@ -1,7 +1,9 @@
 # Database, Apps and Files maintenance
 
-at times it may be nesessary to tidy up files, apps and database in you Nextcloud snap.
+at times it may be nesessary to tidy up files, apps and the database in your Nextcloud snap.
 Especially when some third party app has caused issues with the snap and left a "mess" behind. 
+These commands in sequence will free up space and shrink the database, see [comment](https://github.com/nextcloud-snap/nextcloud-snap/issues/2758#issuecomment-2143605231)
+
 
 ## rescan and cleanup  
 
