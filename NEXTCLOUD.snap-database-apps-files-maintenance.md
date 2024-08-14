@@ -40,7 +40,7 @@ to be removed from the system drive to free up space. You can safely delete the 
 
 # Database, clear 'undo' history
 
-Nextcloud Snap MySQL keeps an 'undo' history (`temp_undo_00x.ibu`) which may become duplicated and grow over time gobbling up disk space. The MySQL 'undo' files in `/var/snap/nextcloud/current/mysql` may needed clearing...
+Nextcloud MySQL keeps an 'undo' history (`temp_undo_00x.ibu`) which may become duplicated and grow over time gobbling up disk space. The MySQL 'undo' files in `/var/snap/nextcloud/current/mysql` may needed clearing...
 
 > [!WARNING]
 > This is like open heart surgery... be **safe** and **backup** your database!
