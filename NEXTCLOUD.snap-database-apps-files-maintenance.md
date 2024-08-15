@@ -26,12 +26,10 @@ sudo nextcloud.occ files:scan-app-data
 ```bash
 sudo nextcloud.occ files:cleanup
 ```
+## Known issues, 'preview generator app'
 
-> [!TIP]
->For example the 'preview generator app' which is sometimes installed manually to generate previews for all sorts of media files. 
-Generating previews with the app gobbles up disk space blowing up the database and increasing CPU load. The "cached" files may want 
-to be removed from the system drive to free up space. You can safely delete the `/var/snap/nextcloud/common/nextcloud/data/appdata_occredxxxx/preview/` directory **after uninstalling** the 'preview generator app'. The file previews will be regenerated with
-'default nextcloud previews' without requiring the 'preview generator app' saving disk space and CPU load.
+> [!NOTE]
+> The 'preview generator app' which is sometimes installed manually to generate previews for all sorts of media files gobbles up disk space blowing up the database and increasing CPU load. The "cached" files will want to be removed from the system drive to free up space. You can safely delete the `/var/snap/nextcloud/common/nextcloud/data/appdata_occredxxxx/preview/` directory **after uninstalling** the 'preview generator app'. The file previews will be regenerated with 'default nextcloud previews' without requiring the 'preview generator app' saving disk space and CPU load.
 
 > [!IMPORTANT]
 > Be patient, regenerating default previews may take a while depending on system resources, files quantity or external media to be scanned!
