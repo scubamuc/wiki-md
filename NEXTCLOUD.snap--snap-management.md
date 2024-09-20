@@ -185,4 +185,4 @@ Value = Number of revesions retained
 sudo snap set system refresh.retain=2
 ```
 
-##### [Skript to Remove old Snap-revisions from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
+##### [Script to Remove old Snap-revisions from host](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/remove-old-snaps.sh)
