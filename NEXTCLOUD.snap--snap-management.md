@@ -141,7 +141,7 @@ View Nextcloud snap logs
 
 3\. issue command `sudo snap restore "snapshot-ID"`
 
-##### [SCUBA's rotating Snap snapshots skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
+##### [SCUBA's rotating Snap snapshots skript](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/snapsnapshot.sh)
 
 ## Remove Snap snapshot
 Remove Snap snapshot
