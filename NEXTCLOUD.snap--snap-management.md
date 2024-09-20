@@ -111,7 +111,7 @@ or defined [channel](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Relea
 # Nextcloud-snap logs
 View Nextcloud snap logs
 
-[Nextcloud-snap logging](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
+[Nextcloud-snap logging](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--logs.md)
 
 ----
 
