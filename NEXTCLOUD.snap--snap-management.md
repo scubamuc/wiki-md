@@ -31,8 +31,7 @@ snap <command> <option> --help
 
 + #### [Nextcloud-snap on Ubuntu](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro)
 
-+ #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
-
++ #### [Nextcloud-snap confinement](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--snap-confinement.md)
 ## View installed enabled Snaps on host
 List enabled snaps on host
 ```
