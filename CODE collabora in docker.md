@@ -28,6 +28,8 @@ services:
 
 ## Collabora Docker option (multiple nextcloud clients)
 
+replace `domain=xcloud.mydomain.com` with `aliasgroup1=https://cloud.mydomain.io:443,https://cloud\\.mydomain\\.io:443` followed by next domain iterating aliasgroup 1...3
+
 ```
 - aliasgroup1=https://cloud.mydomain.io:443,https://cloud\\.mydomain\\.io:443
 - aliasgroup2=https://xcloud.mydomain.io:443,https://xcloud\\.mydomain\\.io:443
