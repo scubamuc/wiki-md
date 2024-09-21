@@ -1,6 +1,6 @@
 # CODE collabora on Docker (Portainer)
 
-Install Docker Portainer on host. Create a DNS entry for subdomain `office.mydomain.xyz`. Create a proxy host on port 9980 for port 443 on your reverse proxy pointing to that host and get the domain name encrypted.
+Install Docker Portainer on host. Create a DNS entry for subdomain `office.mydomain.xyz`. Create a proxy host on your reverse proxy for port 9980 pointing to port 443 and get the domain name encrypted.
 
 ## Docker Portainer Stack:
 
