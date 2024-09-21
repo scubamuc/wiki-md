@@ -40,12 +40,8 @@ services:
 -e ‘dictionaries=eu de_DE en_GB’
 ```
 
-Nextcloud Office bietet zudem eine kleine Statistik- und  Administrationsoberfläche. Aufruf im  Browser:
+View statistics and administration interface in your browser:
 
 ```
-https://deine.domain.de/browser/dist/admin/admin.html
-```
-
-```
-https://office.mydomain.dedyn.io/browser/dist/admin/admin.html
+https://office.mydomain.xyz/browser/dist/admin/admin.html
 ```
