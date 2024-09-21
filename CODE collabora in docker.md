@@ -38,8 +38,10 @@ Replace `domain=xcloud.mydomain.com` with `aliasgroup1=https://cloud.mydomain.io
 
 ## Dictionaries
 
+Add environment option for required dictionaries
+
 ```
--e ‘dictionaries=eu de_DE en_GB’
+- dictionaries=eu de_DE en_GB
 ```
 
 View statistics and administration interface in your browser:
