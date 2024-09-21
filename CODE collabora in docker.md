@@ -14,7 +14,7 @@ services:
     image: collabora/code
     container_name: collabora
     environment:
-      - domain=xcloud.mydomain.com  # Replace with your actual domain
+      - domain=cloud.mydomain.com  # Replace with your actual domain
       - username=admin
       - password=********         # Replace with a strong password
       - extra_params=--o:ssl.enable=true
