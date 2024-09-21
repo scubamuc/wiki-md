@@ -29,9 +29,9 @@ services:
 ## Collabora Docker option (multiple nextcloud clients)
 
 ```
-- aliasgroup1=https://cloud.mydomain.dedyn.io:443,https://cloud\\.mydomain\\.dedyn\\.io:443
-- aliasgroup2=https://xcloud.mydomain.dedyn.io:443,https://xcloud\\.mydomain\\.dedyn\\.io:443
-- aliasgroup3=https://cloud.mydomain.de:443,https://cloud\\.mydomain\\.de:443
+- aliasgroup1=https://cloud.mydomain.io:443,https://cloud\\.mydomain\\.io:443
+- aliasgroup2=https://xcloud.mydomain.io:443,https://xcloud\\.mydomain\\.io:443
+- aliasgroup3=https://cloud.mydomain.com:443,https://cloud\\.mydomain\\.com:443
 ```
 
 ## Dictionaries
