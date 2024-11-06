@@ -49,3 +49,68 @@ services:
 ![grafik](https://github.com/user-attachments/assets/228206d8-11c7-47b8-ad02-b65f69214533)
 
 ![grafik](https://github.com/user-attachments/assets/254064a4-326f-4cdd-bc01-41298152a61e)
+
+----
+
+## Multiple signal servers
+
+https://github.com/nextcloud/all-in-one/issues/5512#issuecomment-2453549033
+
+### Docker Stack example
+
+```
+name: 'hpb'
+
+services:
+
+  nc-talk-1:
+    container_name: nc_talk_1
+    image: nextcloud/aio-talk:latest
+    init: true
+    ports:
+      - 3478:3478/tcp
+      - 3478:3478/udp
+      - 8181:8081/tcp
+    environment:
+      - NC_DOMAIN=cloud.domain1.tld
+      - TALK_HOST=signal1.somedomain.tld
+      - TURN_SECRET=secret
+      - SIGNALING_SECRET=secret
+      - TZ=Pacific/Auckland
+      - TALK_PORT=3478
+      - INTERNAL_SECRET=secret
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /var/log/supervisord
+      - /var/run/supervisord
+      - /opt/eturnal/run
+      - /conf
+      - /tmp
+
+  nc-talk-2:
+    container_name: nc_talk_2
+    image: nextcloud/aio-talk:latest
+    init: true
+    ports:
+      - 3479:3478/tcp
+      - 3479:3478/udp
+      - 8281:8081/tcp
+    environment:
+      - NC_DOMAIN=cloud.domain2.tld
+      - TALK_HOST=signal2.somedomain.tld
+      - TURN_SECRET=secret
+      - SIGNALING_SECRET=secret
+      - TZ=Pacific/Auckland
+      - TALK_PORT=3478
+      - INTERNAL_SECRET=secret
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /var/log/supervisord
+      - /var/run/supervisord
+      - /opt/eturnal/run
+      - /conf
+      - /tmp
+
+```
