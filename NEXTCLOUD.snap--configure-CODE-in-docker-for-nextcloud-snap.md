@@ -1,4 +1,4 @@
-# CODE collabora on Docker 
+# Configure collabora CODE on Docker for Nextcloud snap
 
 Install Docker on host. Create a DNS entry for subdomain `office.mydomain.xyz`. Create a proxy host on your reverse proxy for port 9980 pointing to port 443 and get the domain name encrypted.
 
