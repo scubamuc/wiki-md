@@ -4,14 +4,38 @@
 
 This example will require Docker and a [Reverse proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) for the signalling server, forwarding and encrypting HTTP port 8181 to https://signal.yourdomain.tld
 
+> [!TIP]
+> make sure you have a long `secretpasswordkey` (min. 24 chars, better 32 chars)
+>
+>#### create a long random password for each service;
+> 
+>
+> ![grafik](https://github.com/user-attachments/assets/ba52530d-ed98-4857-a224-fb969be28a8d)
+>
+>
+>1. TURN_SECRET
+>
+>```bash
+>openssl rand -hex 32
+>```
+>
+>2. SIGNALING_SECRET  
+>
+>```bash
+>openssl rand -hex 32
+>```
+>
+>3.  INTERNAL_SECRET
+>
+>```bash
+>openssl rand -hex 32
+>```
+
 ## Create Docker Stack
 
 1. set reverse proxy signal domain to forward (http & WSS) to the endpoints ip:8181
 2. allow inbound bypass for TURN on port 3478 (your.domain.tld:3478) 
    - no encryption necessary for TURN as this will be managed by Nextcloud
-
-> [!TIP]
-> make sure you have a looong `secretpassword`
 
 ```
 name: 'hpb'
