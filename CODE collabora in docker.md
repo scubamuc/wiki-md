@@ -7,8 +7,6 @@ Install Docker Portainer on host. Create a DNS entry for subdomain `office.mydom
 Create a Portainer Stack.
 
 ```
-version: '3.9'
-
 services:
   collabora:
     image: collabora/code
