@@ -2,9 +2,9 @@
 
 If an LXD-cluster with three nodes is overkill for you, a cold standby failover can easily be configured and works fine with two nodes. Be sure to configure WOL (Wake on Lan) for the cold standby node and ensure regular (skripted) container syncronisation or do it manually. Note also, container snapshots on the primary node belong to the container and are syncronised to the secondary node. You may want to prevent snapshots from being syncronised for speed and space with the option `--instance-only`.
 
-One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the containers on the secondary node are stopped as the syncronised containers have identical IP's as those on the primary node which causes network issues. Stopping all containers on the secondary node at startup sounds strange, since this is one of the advantages of LXD... but for this use case add `@reboot sleep 60; lxc stop --all` to your crontab so that all containers are stopped after cold-starting the secondary LXD-backup server. See also [remotes](https://documentation.ubuntu.com/lxd/en/latest/remotes/).
+One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the containers on the secondary node are stopped as the syncronised containers have identical IP's as those on the primary node which causes network issues. Stopping all containers on the secondary node at startup sounds strange, since this is one of the advantages of LXD... but for this use case add `@reboot sleep 60; lxc stop --all` to your crontab so that all containers are stopped after cold-starting the secondary LXD-backup server. 
 
-Assuming you have two identical servers **LXD1** (primary LXD-server) and **LXD2** (secondary LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be configured.
+Assuming you have two identical servers **LXD1** (primary LXD-server) and **LXD2** (secondary LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be configured. See also [remotes](https://documentation.ubuntu.com/lxd/en/latest/remotes/).
 
 #### On production **LXD1** server
 
