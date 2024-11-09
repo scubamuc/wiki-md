@@ -1,6 +1,6 @@
 # Run Docker inside LXC container
 
-Be aware that this setup is basically running a container inside a container. While this has some advantages (i.e. LXC snapshots etc), it requires careful configuration. 
+Be aware that this setup is basically running a container inside a container. While this has some advantages (i.e. LXC snapshots etc), it requires careful configuration. See https://ubuntu.com/tutorials/how-to-run-docker-inside-lxd-containers.
 The default volume format for LXC is ZFS and Docker natively uses BTRFS, thus it will be necessary to create a BTRFS volume in LXC for Docker containers. 
 In addition `security nesting` must be enabled to allow Docker to "run as root" on the LXC host. 
 
