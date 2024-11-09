@@ -11,11 +11,11 @@ the default volume format for LXC containers is ZFS
 
 Running Docker inside an LXC on a ZFS volume will prohibit persistent data storage. Thus a BTRFS volume is required for persistant storage for Docker on LXC.
 
-#### create a new btrfs storage pool
+#### Create a new btrfs storage pool
 
 ```lxc storage create DOCKPOOL btrfs```
 
-###  security nesting
+###  Security nesting
 the LXC container hosting a Docker container must have `security nesting` enabled so that the Docker container can "run as root" on the LXC host.
 
 ` security.nesting: "true"`
@@ -24,7 +24,7 @@ the option may be set per container if required:
 
 ` lxc config set {container-name} security.nesting true`
 
-## profile
+## Profiles
 
 The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with these options defined and simply assign the profile to LXC containers running Docker. See https://documentation.ubuntu.com/lxd/en/stable-5.0/profiles/
 
