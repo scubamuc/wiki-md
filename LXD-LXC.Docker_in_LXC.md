@@ -15,7 +15,7 @@ Running Docker inside an LXC on a ZFS volume will prohibit persistent data stora
 
 ```lxc storage create DOCKPOOL btrfs```
 
-###  Security nesting
+###  security nesting
 the LXC container hosting a Docker container must have `security nesting` enabled so that the Docker container can "run as root" on the LXC host.
 
 ` security.nesting: "true"`
@@ -24,7 +24,7 @@ the option may be set per container if required:
 
 ` lxc config set {container-name} security.nesting true`
 
-## Docker profile
+## profile
 
 The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with these options defined and simply assign the profile to LXC containers running Docker. See https://documentation.ubuntu.com/lxd/en/stable-5.0/profiles/
 
@@ -38,7 +38,7 @@ lxc profile copy 'default' 'default-docker'
 lxc profile edit 'default-docker'
 ```
 
-**Profile example**
+**profile example**
 
 ```
 name: default-docker
@@ -58,12 +58,12 @@ devices:
     type: disk
 ```
 
-**Assign/apply profile to instance**
+**assign/apply profile to instance**
 ```
 lxc profile add <instance_name> 'default-docker'
 ```
 
-**Delete profile from instance**
+**delete profile from instance**
 ```
 lxc profile remove <instance_name> 'default-docker'
 ``
