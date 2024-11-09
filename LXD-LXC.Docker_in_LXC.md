@@ -42,7 +42,7 @@ lxc profile edit 'default-docker'
 
 ```
 name: default-docker
-description: Default LXD for Docker profile
+description: Default Docker profile
 config:
   boot.autostart: "true"
   security.nesting: "true"
