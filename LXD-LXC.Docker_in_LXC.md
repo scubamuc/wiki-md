@@ -26,7 +26,7 @@ the option may be set per container if required:
 
 ## Docker profile
 
-The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with these options defined and simply assign the profile to LXC containers running Docker.
+The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with these options defined and simply assign the profile to LXC containers running Docker. See https://documentation.ubuntu.com/lxd/en/stable-5.0/profiles/
 
 **copy profile**:
 ```
@@ -56,4 +56,14 @@ devices:
     path: /
     pool: DOCKPOOL
     type: disk
-``` 
+```
+
+**Assign/apply profile to instance**
+```
+lxc profile add <instance_name> 'default-docker'
+```
+
+**Delete profile from instance**
+```
+lxc profile remove <instance_name> 'default-docker'
+``
