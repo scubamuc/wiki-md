@@ -54,7 +54,7 @@ devices:
     type: nic
   root:
     path: /
-    pool: DOCKPOOL
+    pool: DCKRPOOL
     type: disk
 ```
 
