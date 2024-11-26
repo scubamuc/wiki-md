@@ -21,11 +21,11 @@ nextcloud-snap backup may be scripted, see example below
 
 3\. snapshots are kept for 30 days
 
-4\. save script in `$USER/bin` as `snapexport.sh`
+4\. save script in `$USER/bin` as `snapexport.sh`  (replace `$USER` with your user name) 
 
 5\. set preference variables
 
-6\. create root-cronjob for weekly execution ( ``` 0 1 * * 0 su $USER /home/$USER/bin/snapexport.sh ``` )
+6\. create root-cronjob for weekly execution ( ``` 0 1 * * 0 su $USER /home/$USER/bin/snapexport.sh ``` ) (replace `$USER` with your user name) 
 
 ```
 #!/bin/bash
