@@ -59,8 +59,8 @@ In most cases, the file will be empty. Copy and paste the following lines:
 
 ```
 APT::Periodic::Update-Package-Lists "1";
-APT::Periodic::Unattended-Upgrade "7";
-APT::Periodic::AutocleanInterval "7";
+APT::Periodic::Unattended-Upgrade "1";
+APT::Periodic::AutocleanInterval "1";
 ```
 
 The time interval are specified in days, feel free to change the values. Save changes and exit.
