@@ -1,4 +1,4 @@
-# Configure LXD/LXC bridged network
+# Configure LXD/LXC bridged network Network-Manager
 
 there are several methods to configure bridged networking on Linux/Ubuntu. Why bridged networking for LXD? Well, `macvlan` is easier to configure, but you will not be able to reach the container via SSH from the LXD host. To enable virtual networking bridged network is the way to go. Some will argue about this... 
 
@@ -59,3 +59,30 @@ $ sudo nmcli connection modify br0 ipv4.method manual
 ```
 
 Alternatively IP's may be assigned in DHCP using router interface
+
+----
+
+# Configure LXD/LXC bridged network Netplan (from 24.04)
+
+https://ubuntu.com/server/docs/configuring-networks#bridging-multiple-interfaces
+
+Configure the bridge by editing your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
+```
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp3s0:
+      dhcp4: no
+  bridges:
+    br0:
+      dhcp4: yes
+      interfaces:
+        - enp3s0
+```
+Now apply the configuration to enable the bridge:
+```
+sudo netplan apply
+```
+
+The new bridge interface should now be up and running. The `brctl` provides useful information about the state of the bridge, controls which interfaces are part of the bridge, etc. See man brctl for more information.
