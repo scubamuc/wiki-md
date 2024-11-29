@@ -70,6 +70,7 @@ if you're happy using **Network-Manager** instead of **Netplan**, you can simply
 * https://ubuntu.com/server/docs/configuring-networks#bridging-multiple-interfaces
 
 further reading:
+* https://netplan.readthedocs.io/en/latest/netplan-tutorial/
 * https://luppeng.wordpress.com/2023/01/10/make-lxd-containers-visible-on-host-network/
 * https://thomas-leister.de/en/lxd-use-public-interface/
 
