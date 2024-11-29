@@ -69,6 +69,10 @@ if you're happy using **Network-Manager** instead of **Netplan**, you can simply
 * https://thenewstack.io/how-to-create-a-bridged-network-for-lxd-containers/
 * https://ubuntu.com/server/docs/configuring-networks#bridging-multiple-interfaces
 
+further reading:
+* https://luppeng.wordpress.com/2023/01/10/make-lxd-containers-visible-on-host-network/
+* https://thomas-leister.de/en/lxd-use-public-interface/
+
 Configure the bridge by editing your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
 ```
 network:
