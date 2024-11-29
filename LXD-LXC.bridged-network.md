@@ -66,10 +66,9 @@ Alternatively IP's may be assigned in DHCP using router interface
 
 if you're happy using **Network-Manager** instead of **Netplan**, you can simply install Network-Manager `sudo snap install network-manager` and use that instead... by removing the snap, you'll be using Netplan again.
 
+further Netplan reading:
 * https://thenewstack.io/how-to-create-a-bridged-network-for-lxd-containers/
 * https://ubuntu.com/server/docs/configuring-networks#bridging-multiple-interfaces
-
-further reading:
 * https://netplan.readthedocs.io/en/latest/netplan-tutorial/
 * https://luppeng.wordpress.com/2023/01/10/make-lxd-containers-visible-on-host-network/
 * https://thomas-leister.de/en/lxd-use-public-interface/
