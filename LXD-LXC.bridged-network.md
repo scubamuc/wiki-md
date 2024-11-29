@@ -66,7 +66,8 @@ Alternatively IP's may be assigned in DHCP using router interface
 
 if you're happy using **Network-Manager** instead of **Netplan**, you can simply install Network-Manager `sudo snap install network-manager` and use that instead... by removing the snap, you'll be using Netplan again.
 
-https://ubuntu.com/server/docs/configuring-networks#bridging-multiple-interfaces
+* https://thenewstack.io/how-to-create-a-bridged-network-for-lxd-containers/
+* https://ubuntu.com/server/docs/configuring-networks#bridging-multiple-interfaces
 
 Configure the bridge by editing your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
 ```
