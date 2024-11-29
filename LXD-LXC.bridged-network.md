@@ -73,7 +73,10 @@ further Netplan reading:
 * https://luppeng.wordpress.com/2023/01/10/make-lxd-containers-visible-on-host-network/
 * https://thomas-leister.de/en/lxd-use-public-interface/
 
-Configure the bridge by editing your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
+Configure the bridge by editing or creating your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
+
+create: `sudo nano 01-netplan-bridge.yaml` (use any name, but ensure numbering...lowest number wins)
+
 ```
 network:
   version: 2
@@ -89,7 +92,7 @@ network:
 ```
 Now apply the configuration to enable the bridge:
 ```
-sudo netplan apply
+sudo netplan try
 ```
 
 The new bridge interface should now be up and running. The `brctl` provides useful information about the state of the bridge, controls which interfaces are part of the bridge, etc. See man brctl for more information.
