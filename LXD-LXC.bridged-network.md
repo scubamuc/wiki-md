@@ -75,7 +75,7 @@ further Netplan reading:
 
 Configure the bridge by editing or creating your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
 
-create: `sudo nano 01-netplan-bridge.yaml` (use any name, but ensure numbering...lowest number wins)
+create: `sudo nano 01-netcfg.yaml` (use any name, but ensure numbering...lowest number wins)
 
 ```
 network:
@@ -85,7 +85,7 @@ network:
     enp3s0:
       dhcp4: no
   bridges:
-    br0:
+    bridge01:
       dhcp4: yes
       interfaces:
         - enp3s0
