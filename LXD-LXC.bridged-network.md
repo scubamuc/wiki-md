@@ -106,3 +106,14 @@ Check to see your bridge is available `ip a`:
 
 ```
 The new bridge interface should now be up and running. The `brctl` provides useful information about the state of the bridge, controls which interfaces are part of the bridge, etc. See man brctl for more information.
+
+## Manage bridges with `brctl`
+
+**bring down bridge**
+```
+ip link set bridge01 down
+```
+**delete bridge**
+```
+brctl delbr bridge01
+```
