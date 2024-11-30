@@ -76,7 +76,7 @@ further Netplan reading:
 Configure the bridge by editing or creating your Netplan configuration in /etc/netplan/, entering the appropriate values for your physical interface and network:
 
 1. view appropriate values using `ip a` and note you ethernet interface names (`enp0s25` or similar)
-2. create: `sudo nano /etc/netplan/01-netcfg-bridge.yaml`
+2. create: `sudo nano /etc/netplan/01-netcfg-bridge01.yaml`
 
 ```
 network:
@@ -93,7 +93,7 @@ network:
 ```
 
 3. activate your bridge using `sudo netplan apply`
-4. you may get a warning `Permissions for /etc/netplan/01-netcfg.yaml are too open. Netplan configuration should NOT be accessible by others.` which you can correct with `sudo chmod 600 01-netcfg.yaml`
+4. you may get a warning `Permissions for /etc/netplan/01-netcfg-bridge01.yaml are too open. Netplan configuration should NOT be accessible by others.` which you can correct with `sudo chmod 600 01-netcfg-bridge01.yaml`
 5. Now apply the configuration to enable the bridge:
 ```
 sudo netplan apply
