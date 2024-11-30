@@ -76,7 +76,7 @@ further Netplan reading:
 Configure the bridge by editing or creating your Netplan configuration in /etc/netplan/, entering the appropriate values for your physical interface and network:
 
 1. view appropriate values using `ip a` and note you ethernet interface names (`enp0s25` or similar)
-2. create: `sudo nano /etc/netplan/01-netcfg-bridge01.yaml`
+2. create: `sudo nano /etc/netplan/01-netcfg-br0.yaml`
 
 ```
 network:
@@ -86,14 +86,14 @@ network:
     enp0s25:
       dhcp4: no
   bridges:
-    bridge01:
+    br0:
       dhcp4: yes
       interfaces:
         - enp0s25
 ```
 
 3. activate your bridge using `sudo netplan apply`
-4. you may get a warning `Permissions for /etc/netplan/01-netcfg-bridge01.yaml are too open. Netplan configuration should NOT be accessible by others.` which you can correct with `sudo chmod 600 01-netcfg-bridge01.yaml`
+4. you may get a warning `Permissions for /etc/netplan/01-netcfg-br0.yaml are too open. Netplan configuration should NOT be accessible by others.` which you can correct with `sudo chmod 600 01-netcfg-br0.yaml`
 5. Now apply the configuration to enable the bridge:
 ```
 sudo netplan apply
@@ -101,7 +101,7 @@ sudo netplan apply
 
 Check to see your bridge is available `ip a`:
 ```
-4: bridge01: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+4: br0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
     link/ether 86:c7:15:fb:a6:c0 brd ff:ff:ff:ff:ff:ff
 
 ```
@@ -111,11 +111,17 @@ The new bridge interface should now be up and running. The `brctl` provides usef
 
 **bring down bridge**
 ```
-ip link set bridge01 down
+ip link set br0 down
 ```
 **delete bridge**
 ```
-brctl delbr bridge01
+brctl delbr br0
+```
+
+## Restart the network
+
+```
+systemctl restart networking
 ```
 ----
 
