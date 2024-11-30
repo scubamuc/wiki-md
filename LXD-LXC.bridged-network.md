@@ -117,3 +117,67 @@ ip link set bridge01 down
 ```
 brctl delbr bridge01
 ```
+----
+
+# Create a bridge with brctl (bridge control) on Ubuntu 24.04
+
+* https://www.zenarmor.com/docs/linux-tutorials/how-to-configure-network-bridge-on-linux
+
+`brctl` is preinstalled on Ubuntu 24.04 but can be installed by issuing command  `apt install bridge-utils`
+
+## Add bridge `br0`
+
+issue command to create a new bridge <name> (here `br0` but it may be anything)
+```
+brctl addbr br0
+```
+
+## Delete bridge 
+
+issue command to detelete brigde if you change your mind
+```
+brctl delbr br0
+```
+
+## Discover your network (device) interface name 
+
+issue command to discover/view the interfaces that will be bridged (eth0, eth1, etc. is typical)
+```
+ipo addr show
+``` 
+
+## Add network (device) to your bridge
+
+add interface to the newly added bridge device issue command:
+```
+brctl addif br0 enp0s25
+```
+
+add **multiple** intefaces if required `brctl addif br0 enp0s25 ens18`
+**remove** an interface from a bridge `brctl delif br0 ens18`
+
+## View interfaces in a bridge
+
+view the summary of the overall bridge status
+
+```
+brctl show
+```
+
+## Configure Spanning Tree (`stp`)
+
+* **enable** `stp` issue: `brctl stp br0 on`
+* **disable** `stp` issue: `brctl stp br0 off`
+* **view** `stp` parameters: `brctl showstp br0`
+
+## Start your bridge
+
+```
+ifup br0  
+```
+
+## Restart the network
+
+```
+systemctl restart networking
+```
