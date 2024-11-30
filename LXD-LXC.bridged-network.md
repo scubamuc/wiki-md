@@ -119,7 +119,7 @@ brctl delbr bridge01
 ```
 ----
 
-# Create a bridge with brctl (bridge control) on Ubuntu 24.04
+# Create a bridge with `brctl` (bridge control) on Ubuntu 24.04
 
 * https://www.zenarmor.com/docs/linux-tutorials/how-to-configure-network-bridge-on-linux
 
