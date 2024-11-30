@@ -143,7 +143,7 @@ brctl delbr br0
 
 issue command to discover/view the interfaces that will be bridged (eth0, eth1, etc. is typical)
 ```
-ipo addr show
+ip addr show
 ``` 
 
 ## Add network (device) to your bridge
