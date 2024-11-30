@@ -99,4 +99,10 @@ network:
 sudo netplan apply
 ```
 
+Check to see your bridge is available `ip a`:
+```
+4: bridge01: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 86:c7:15:fb:a6:c0 brd ff:ff:ff:ff:ff:ff
+
+```
 The new bridge interface should now be up and running. The `brctl` provides useful information about the state of the bridge, controls which interfaces are part of the bridge, etc. See man brctl for more information.
