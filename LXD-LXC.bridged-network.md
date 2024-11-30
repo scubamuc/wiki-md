@@ -73,9 +73,9 @@ further Netplan reading:
 * https://luppeng.wordpress.com/2023/01/10/make-lxd-containers-visible-on-host-network/
 * https://thomas-leister.de/en/lxd-use-public-interface/
 
-Configure the bridge by editing or creating your netplan configuration found in /etc/netplan/, entering the appropriate values for your physical interface and network:
+Configure the bridge by editing or creating your Netplan configuration in /etc/netplan/, entering the appropriate values for your physical interface and network:
 
-1. vie apöpropriate values using `ip a` and note you ethernet interface names (`enp0s25` or similar)
+1. view appropriate values using `ip a` and note you ethernet interface names (`enp0s25` or similar)
 2. create: `sudo nano /etc/netplan/01-netcfg-bridge.yaml`
 
 ```
@@ -83,16 +83,16 @@ network:
   version: 2
   renderer: networkd
   ethernets:
-    enp3s0:
+    enp0s25:
       dhcp4: no
   bridges:
     bridge01:
       dhcp4: yes
       interfaces:
-        - enp3s0
+        - enp0s25
 ```
 
-3. activate your new biordge using `sudo netplan apply`
+3. activate your bridge using `sudo netplan apply`
 4. you may get a warning `Permissions for /etc/netplan/01-netcfg.yaml are too open. Netplan configuration should NOT be accessible by others.` which you can correct with `sudo chmod 600 01-netcfg.yaml`
 5. Now apply the configuration to enable the bridge:
 ```
