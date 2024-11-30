@@ -1,4 +1,4 @@
-# Configure LXD/LXC bridged network Network-Manager
+# Configure bridged network with Network-Manager
 
 there are several methods to configure bridged networking on Linux/Ubuntu. Why bridged networking for LXD? Well, `macvlan` is easier to configure, but you will not be able to reach the container via SSH from the LXD host. To enable virtual networking bridged network is the way to go. Some will argue about this... 
 
@@ -62,7 +62,7 @@ Alternatively IP's may be assigned in DHCP using router interface
 
 ----
 
-# Configure LXD/LXC bridged network Netplan (from 24.04)
+# Configure bridged network with Netplan (from 24.04)
 
 if you're happy using **Network-Manager** instead of **Netplan**, you can simply install Network-Manager `sudo snap install network-manager` and use that instead... by removing the snap, you'll be using Netplan again.
 
@@ -125,7 +125,7 @@ systemctl restart networking
 ```
 ----
 
-# Create a bridge with `brctl` (bridge control) on Ubuntu 24.04
+# Configure bridged network with `brctl` (bridge control)
 
 * https://www.zenarmor.com/docs/linux-tutorials/how-to-configure-network-bridge-on-linux
 
