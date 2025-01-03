@@ -42,3 +42,12 @@
 - Mask 🤿 = `:diving_mask:`
 
 [Github Emojii cheatsheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) 
+
+----
+
+## centzer align images, image display size
+
+
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/user-attachments/assets/91d50e8e-3aa6-418a-b091-d97c9c29079f" alt="first start">
+</p>
