@@ -24,6 +24,14 @@ the option may be set per container if required:
 
 ` lxc config set {container-name} security.nesting true`
 
+### Security modules
+https://ubuntu.com/tutorials/how-to-run-docker-inside-lxd-containers#2-create-lxd-container
+
+```
+lxc config set {container-name} security.syscalls.intercept.mknod=true security.syscalls.intercept.setxattr=true
+
+```
+
 ## Profiles
 
 The easiest way to do this is to copy the `default` profile to create a `default-docker` profile with these options defined and simply assign the profile to LXC containers running Docker. See https://documentation.ubuntu.com/lxd/en/stable-5.0/profiles/
