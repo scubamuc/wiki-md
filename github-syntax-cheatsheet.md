@@ -51,3 +51,16 @@
 <p align="center" width="100%">
     <img width="25%" src="https://github.com/user-attachments/assets/91d50e8e-3aa6-418a-b091-d97c9c29079f" alt="first start">
 </p>
+
+----
+
+## Shortcuts to remember
+
++ https://docs.github.com/en/get-started/accessibility/keyboard-shortcuts#source-code-editing
+
++ `strg+e` unformatted text
++ `strg+k` add link
++ `strg+b` bold text
++ `strg+i` italic text
++ 
+
