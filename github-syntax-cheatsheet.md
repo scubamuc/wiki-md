@@ -45,7 +45,7 @@
 
 ----
 
-## center align images, image display size
+## Github center align images, image display size
 
 
 <p align="center" width="100%">
