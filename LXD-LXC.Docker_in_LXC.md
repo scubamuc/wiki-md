@@ -22,13 +22,13 @@ the LXC container hosting a Docker container must have `security nesting` enable
 
 the option may be set per container if required:
 
-` lxc config set <container-name> security.nesting true`
+` lxc config set <CONTAINERNAME> security.nesting true`
 
 #### Security modules
 https://ubuntu.com/tutorials/how-to-run-docker-inside-lxd-containers#2-create-lxd-container
 
 ```
-lxc config set <container-name> security.syscalls.intercept.mknod=true security.syscalls.intercept.setxattr=true
+lxc config set <CONTAINERNAME> security.syscalls.intercept.mknod=true security.syscalls.intercept.setxattr=true
 
 ```
 
@@ -54,6 +54,8 @@ description: Default Docker profile
 config:
   boot.autostart: "true"
   security.nesting: "true"
+  security.syscalls.intercept.mknod: "true"
+  security.syscalls.intercept.setxattr: "true"
 devices:
   eth0:
     name: eth0
