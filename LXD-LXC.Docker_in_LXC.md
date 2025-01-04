@@ -76,4 +76,21 @@ lxc profile add <instance_name> 'default-docker'
 **delete profile from instance**
 ```
 lxc profile remove <instance_name> 'default-docker'
-``
+```
+----
+
+## Issue upgrading host to 24.04
+
+https://bugs.launchpad.net/apparmor/+bug/2067900
+
+due to some Apprmor issues in 24.04, Docker may not start inside LXC
+as a workaround start the LXC container and add line: `pivot_root,` at the end of the file `/etc/apparmor.d/runc`
+
+
+``` 
+nano /etc/apparmor.d/runc
+```
+
+add line: `pivot_root,` at the end of the file
+
+restart the container
