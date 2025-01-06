@@ -81,7 +81,8 @@ lxc profile remove <instance_name> 'default-docker'
 
 ## Issue upgrading host to 24.04 breaks LXC with Docker
 
-https://bugs.launchpad.net/apparmor/+bug/2067900
++ https://bugs.launchpad.net/apparmor/+bug/2067900
++ https://github.com/canonical/lxd/issues/13389
 
 due to some Apprmor issues in 24.04, Docker may not start inside LXC
 as a workaround start the LXC container and remove the file `/etc/apparmor.d/runc`
