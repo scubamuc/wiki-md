@@ -20,7 +20,7 @@ To speed up things a little these tests are partially automated using self desig
 ## 5. Test result overview
 + run [Nextcloud-Info-overview](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/ncinfo_en.sh)
 
-### example test result
+### Example test result
 ![grafik](https://github.com/user-attachments/assets/5ba2d439-0c83-4215-8927-fe6c1cfe40d1)
 
 ### Duration
