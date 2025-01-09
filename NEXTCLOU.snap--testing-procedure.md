@@ -1,12 +1,19 @@
 # Nextcloud snap testing procedure
 
 As a member of the [Nextcloud development team](https://github.com/nextcloud-snap) I help out with [support](https://github.com/nextcloud-snap/nextcloud-snap/issues) and [documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki) as well as [PR testing](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Develop-and-contribute).
-To speed up things a little these tests are partially automated using self designed scripts.
+
+## Setup testing environment per script (optional)
+
+You may want to automate installation for testing, thus maintaining a reproducible environment. No need to do repetitive stuff if you can automate it.
+
+This method enables quick PR testing (_10-15 minutes per test, depending on resources_). It is important to follow exactly the same procedure for every test so that any discrepancies are discovered immediately. Even the smallest deviations could have an impact. The test result should be identical each time it is run.
+
+Assuming you're running your tests behind a [reverse proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/NGINX-proxy-manager)
 
 ## PR testing procedure
 
 ## 1. Install Nextcloud snap
-+ install Nextcloud snap latest/beta or PR --channel=beta/pr-<number> on testing host
++ install Nextcloud snap `latest/beta` or PR `--channel=beta/pr-<number>` on testing host
 
 ## 2. Manual first start 
 + complete Nextcloud initialisation see first start. this should be done manually and test if "upstream" issues are resolved
