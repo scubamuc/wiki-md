@@ -1,14 +1,16 @@
 # Calculate approximate power consumption
 
-[*Lenovo ThinkCentre M92p Tiny*](https://github.com/scubamuc/scubamuc.github.io#11-hardware) headless power consumption: ~16W load / ~12W idle
-
-![grafik](https://github.com/user-attachments/assets/b9774bb4-b637-43e0-a6fe-b6c46d122297)
-
-Average idle load: 99,54%
-
-Average CPU load: 0,46%
-
-Averege CPU load per CPU: 0,46% / 4CPU = 0,115%
+> ### Example
+>
+> [*Lenovo ThinkCentre M92p Tiny*](https://github.com/scubamuc/scubamuc.github.io#11-hardware) headless power consumption: ~16W load / ~12W idle
+> 
+> You'll need to run `sysstat` on your machine for 24 Hours to get an average with `sar -p`
+>
+> ![grafik](https://github.com/user-attachments/assets/b9774bb4-b637-43e0-a6fe-b6c46d122297)
+> 
+> + Average idle load: 99,54%
+> + Average CPU load: 0,46%
+> + Averege CPU load per CPU: 0,46% / 4CPU = 0,115%
 
 ```
 W = Watt
