@@ -4,6 +4,9 @@
 
 ![grafik](https://github.com/user-attachments/assets/b9774bb4-b637-43e0-a6fe-b6c46d122297)
 
+Average idle load: 99,54
+Average CPU load: 0,46
+
 ```
 W = Watt
 H = Hour
@@ -15,7 +18,7 @@ p.m. = per month
 ```
 ## Calculation:
 
- - Example 1: `12W x 24H x 365D / 1000 x € 0,45` = **€ 47,30 p.a.** ~ **€ 3,94 p.m.** 
+ - Example 1: `12W x 24H x 365D / 1000 x €0,45` = **€ 47,30 p.a.** ~ **€ 3,94 p.m.** 
 
- - Example 2: `12W x 24H x 365D / 1000 x $ 0,70` = **$ 73,58 p.a.** ~ **$ 6,13 p.m.** 
+ - Example 2: `12W x 24H x 365D / 1000 x $0,70` = **$ 73,58 p.a.** ~ **$ 6,13 p.m.** 
 
