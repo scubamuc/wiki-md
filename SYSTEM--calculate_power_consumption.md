@@ -2,7 +2,7 @@
 
 [*Lenovo ThinkCentre M92p Tiny*](https://github.com/scubamuc/scubamuc.github.io#11-hardware) headless power consumption: ~16W load / ~12W idle
 
-![grafik](https://user-images.githubusercontent.com/54933878/234572976-7263ad71-4a60-49cc-a899-d5d5d3499c64.png)
+![grafik](https://github.com/user-attachments/assets/b9774bb4-b637-43e0-a6fe-b6c46d122297)
 
 ```
 W = Watt
