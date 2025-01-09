@@ -4,8 +4,11 @@
 
 ![grafik](https://github.com/user-attachments/assets/b9774bb4-b637-43e0-a6fe-b6c46d122297)
 
-Average idle load: 99,54
-Average CPU load: 0,46
+Average idle load: 99,54%
+
+Average CPU load: 0,46%
+
+Averege CPU load per CPU: 0,46% / 4CPU = 0,115%
 
 ```
 W = Watt
