@@ -1,6 +1,6 @@
 # Nextcloud snap testing procedure
 
-As a member of the [Nextcloud development team](https://github.com/nextcloud-snap) and help out with [support](https://github.com/nextcloud-snap/nextcloud-snap/issues) and [documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki) as well as [PR testing](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Develop-and-contribute).
+As a member of the [Nextcloud development team](https://github.com/nextcloud-snap) I help out with [support](https://github.com/nextcloud-snap/nextcloud-snap/issues) and [documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki) as well as [PR testing](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Develop-and-contribute).
 To speed up things a little these tests are partially automated using self designed scripts.
 
 ## PR testing procedure
