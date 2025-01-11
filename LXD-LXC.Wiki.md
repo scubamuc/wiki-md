@@ -344,6 +344,15 @@ devices:
     path: /
     pool: DOCKPOOL
     type: disk
+```
+
+**copy profiles between nodes** 
+
+Copy profile from one remote to another using `--refresh` when the profile already exists on the remote.
+
+```
+lxc profile copy <PROFILENAME> <REMOTENAME>: --refresh
+
 ``` 
 
 # Syncronise/Copy containers between LXD nodes
