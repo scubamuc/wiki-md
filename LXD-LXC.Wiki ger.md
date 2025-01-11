@@ -101,6 +101,15 @@ Standardmäßig wird das **default** Profil zugewiesen wenn ein Container erstel
 
   `lxc profile add 'PROFILNAME' 'CONTAINERNAME'`
 
+**copy profiles between nodes** 
+
+Copy profile from one remote to another using `--refresh` when the profile already exists on the remote.
+
+```
+lxc profile copy <PROFILENAME> <REMOTENAME>: --refresh
+
+```   
+
 Weitere Kommandos und Optionen siehe `lxc profile --help`
 
 ---
