@@ -89,7 +89,7 @@ echo "$(timestamp) -- Snapbackup $SNAPNAME Start" >> "$LOG" ; ## start log
  sudo snap start "$SNAPNAME" ;
 
 ## find and move snapshot to $TARGET  
- sudo find "$SOURCE"/ -maxdepth 1 -name "*.zip" -exec mv {} "$TARGET"/ \; # find and move
+ sudo find "$SOURCE"/ -maxdepth 1 -name "*.zip" -exec mv {} "$TARGET"/ \; #find and move
 ## find old snapshots and delete snapshots older than $RETENTION days
  sudo find "$TARGET"/ -name "*.zip" -mtime +"$RETENTION" -exec rm -f {} \; # find and delete
 
