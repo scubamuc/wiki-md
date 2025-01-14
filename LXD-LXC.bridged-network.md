@@ -64,7 +64,7 @@ Alternatively IP's may be assigned in DHCP using router interface
 
 # Configure bridged network with Netplan (from 24.04)
 
-if you're happy using **Network-Manager** instead of **Netplan**, you can simply install Network-Manager `sudo apt install network-manager` and use that instead... Network-Manager uses Netplan too.
+if you're happy using **Network-Manager** instead of **Netplan**, you can simply install Network-Manager `sudo apt install network-manager` and use that instead... Network-Manager can be used too.
 
 further Netplan reading:
 * https://thenewstack.io/how-to-create-a-bridged-network-for-lxd-containers/
