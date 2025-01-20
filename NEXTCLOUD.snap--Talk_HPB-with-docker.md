@@ -104,13 +104,6 @@ services:
       - TALK_PORT=3478
       - INTERNAL_SECRET=secret
     restart: unless-stopped
-    read_only: true
-    tmpfs:
-      - /var/log/supervisord
-      - /var/run/supervisord
-      - /opt/eturnal/run
-      - /conf
-      - /tmp
 
   nc-talk-2:
     container_name: nc_talk_2
@@ -129,12 +122,5 @@ services:
       - TALK_PORT=3478
       - INTERNAL_SECRET=secret
     restart: unless-stopped
-    read_only: true
-    tmpfs:
-      - /var/log/supervisord
-      - /var/run/supervisord
-      - /opt/eturnal/run
-      - /conf
-      - /tmp
 
 ```
