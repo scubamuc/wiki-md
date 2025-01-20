@@ -53,11 +53,11 @@ services:
     environment:
       - NC_DOMAIN=cloud.yourdomain.tld
       - TALK_HOST=signal.somedomain.tld
-      - TURN_SECRET=secretpassword #this must be a long password
-      - SIGNALING_SECRET=secretpassword #this must be a long password
+      - TURN_SECRET=secretpassword #this must be a long secretpasswordkey
+      - SIGNALING_SECRET=secretpassword #this must be a long secretpasswordkey
       - TZ=Europe/Berlin
       - TALK_PORT=3478
-      - INTERNAL_SECRET=secretpassword #this must be a long password
+      - INTERNAL_SECRET=secretpassword #this must be a long secretpasswordkey
     restart: unless-stopped
 
 ```
