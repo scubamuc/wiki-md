@@ -59,13 +59,7 @@ services:
       - TALK_PORT=3478
       - INTERNAL_SECRET=secretpassword #this must be a long password
     restart: unless-stopped
-    read_only: true
-    tmpfs:
-      - /var/log/supervisord
-      - /var/run/supervisord
-      - /opt/eturnal/run
-      - /conf
-      - /tmp
+
 ```
 
 ![grafik](https://github.com/user-attachments/assets/b5e08e15-8ddc-42cf-bbf8-0292ca551821)
