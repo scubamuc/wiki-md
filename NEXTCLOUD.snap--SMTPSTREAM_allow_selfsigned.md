@@ -1,6 +1,6 @@
 # Nextcloud additional SMTP settings for connecting DMZ to Exchange SMTP
 
-## Allow Selfsigned SMTP by adding StreamBuffer.php
+## Allow self signed SMTP by adding ` StreamBuffer.php `
 
 ### Nextcloud is in DMZ connecting to an Exchange server through a NAT loopback requiring SSL with self signed certificate.
 
