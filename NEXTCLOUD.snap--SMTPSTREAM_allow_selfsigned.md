@@ -2,7 +2,7 @@
 
 ## Allow Selfsigned SMTP
 
-## Nextcloud is in the DMZ connecting to an Exchange server through a NAT loopback
+### Nextcloud is in DMZ connecting to an Exchange server through a NAT loopback requiring SSL with self signed certificate.
 
 Edit config.php and add following section:
 
