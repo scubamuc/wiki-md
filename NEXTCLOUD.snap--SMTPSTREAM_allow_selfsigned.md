@@ -1,6 +1,6 @@
-# Problems sending Mail, Nextcloud SMTP settings for sending Mail, NC in DMZ -- Exchange SMTP
+# Nextcloud additional SMTP settings for connecting DMZ to Exchange SMTP
 
-## Allow Selfsigned SMTP
+## Allow Selfsigned SMTP by adding StreamBuffer.php
 
 ### Nextcloud is in DMZ connecting to an Exchange server through a NAT loopback requiring SSL with self signed certificate.
 
