@@ -2,6 +2,14 @@
 
 ## Talk:HPB
 
+A **H**igh **P**erformance **B**ackend (HPB) reqires three services working hand in hand; 
+
+1. a STUN service which is part of TURN for discovering device IP's behind NAT or simple single service like `stun.nextcloud.com:443`
+2. a TURN service like "coturn" or "eturnal" for discovering and connecting NATed external IP's and controlling WebRTC streams
+3. a signalling service like "janus" required for calls and conversations with multiple participants. Without it, all participants have to upload their own video individually for each other participant, which will most likely cause connectivity issues and a high load on participating devices.
+
+Self-hosting all three services is not as daunting as it seems and thanks to the folks at [Nextcloud AIO](https://github.com/nextcloud/all-in-one) is easily installed running their docker image.
+
 This example will require Docker and a [Reverse proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) for the signalling server, forwarding and encrypting HTTP port 8181 to https://signal.yourdomain.tld
 
 > [!TIP]
