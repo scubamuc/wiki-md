@@ -8,8 +8,7 @@ here are some of my personal notes and rough drafts for official [wikis](https:/
 
 > [!NOTE]
 >Remember these are notes... so use any commands and scripts **at own risk**. Adapt them to your needs if you like, but be careful and double check!
-
-> [!NOTE]
+>
 > If you find any errors or typo's, you can keep 'em 🤣
 
 If you find what you need, thats great and you're welcome 🤿 👌
