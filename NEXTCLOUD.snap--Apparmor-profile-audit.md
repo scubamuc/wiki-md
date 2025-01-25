@@ -1,6 +1,6 @@
 # Apparmor profile `syslog` warnings
 
-In some cases **apparmor="DENIED"** `syslog` warnings are "complaining" about failing Apparmor audits. These warnings are nothing to worry about since the snap is doing what it should and **confining** the snap!
+In some cases **apparmor="DENIED"** `syslog` warnings are "complaining" about failing Apparmor audits. These warnings are nothing to worry about since snapd is doing what it should and **confining** the snap!
 
 ```
 audit: type=1400 audit(1732273383.121:15114): apparmor="DENIED" operation="ptrace" namespace="root//lxd-NEXTCLOUD_<var-snap-lxd-common-lxd>" profile="snap.nextcloud.nextcloud-cron" pid=2057758 comm="ps" requested_mask="read" denied_mask="read" peer="unconfined"
