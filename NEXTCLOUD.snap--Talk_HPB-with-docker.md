@@ -83,7 +83,7 @@ services:
 
 ## Example NPM configuration
 
-![grafik](https://github.com/user-attachments/assets/254064a4-326f-4cdd-bc01-41298152a61e)
+![grafik](https://github.com/user-attachments/assets/907309b8-076a-4457-b519-eb63381802ff)
 
 ----
 
