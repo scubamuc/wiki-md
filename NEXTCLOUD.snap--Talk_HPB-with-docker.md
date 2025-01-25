@@ -10,7 +10,12 @@ A **H**igh **P**erformance **B**ackend (HPB) reqires three services working hand
 
 Self-hosting all three services is not as daunting as it seems and thanks to the folks at [Nextcloud AIO](https://github.com/nextcloud/all-in-one) is easily installed running their docker image.
 
-This example will require Docker and a [Reverse proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) for the signalling server, forwarding and encrypting HTTP port 8181 to https://signal.yourdomain.tld
+This example will require Docker and a Reverse proxy for the signalling server, forwarding and encrypting HTTP port 8181 to https://mysignal.mydomain.tld
+
+* Set reverse proxy host for signal domain to forward http & WSS (Websockets Support) for port 8181
+* Allow inbound bypass for TURN on port 3478 (your.domain.tld:3478) in Router/Firewall
+  * no encryption necessary for TURN as this will be managed by Nextcloud
+
 
 > [!TIP]
 > make sure you have a long `secretpasswordkey` (min. 24 chars, better 32 chars)
@@ -39,11 +44,7 @@ This example will require Docker and a [Reverse proxy](https://github.com/nextcl
 >openssl rand -hex 32
 >```
 
-## Create Docker Stack
-
-1. Set reverse proxy host for signal domain to forward http & WSS (Websockets Support) for port 8181
-2. Allow inbound bypass for TURN on port 3478 (your.domain.tld:3478) in Router/Firewall
-   - no encryption necessary for TURN as this will be managed by Nextcloud
+## Create and run Docker Stack
 
 ```
 name: 'hpb'
