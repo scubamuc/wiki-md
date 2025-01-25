@@ -10,7 +10,7 @@ A **H**igh **P**erformance **B**ackend (HPB) reqires three services working hand
 
 Self-hosting all three services is not as daunting as it seems and thanks to the folks at [Nextcloud AIO](https://github.com/nextcloud/all-in-one) is easily installed running their docker image.
 
-This example will require Docker and a Reverse proxy for the signalling server, forwarding and encrypting HTTP port 8181 to https://mysignal.mydomain.tld
+This example will require Docker and a Reverse proxy for the signalling server, forwarding and encrypting HTTP port 8181 to `https://signal.mydomain.tld`
 
 * Set reverse proxy host for signal domain to forward http & WSS (Websockets Support) for port 8181
 * Allow inbound bypass for TURN on port 3478 (your.domain.tld:3478) in Router/Firewall
