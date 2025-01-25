@@ -48,7 +48,7 @@ To ensure that the bridge is started on reboot the default (Auto-Ethernet) conne
 
 `$ sudo nmtui`
 
-### Assign fixed IP to bridge
+### Assign static IP to bridge
 
 ```
 $ sudo nmcli connection modify br0 ipv4.addresses '192.168.2.200/24'
