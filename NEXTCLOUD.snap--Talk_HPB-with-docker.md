@@ -69,10 +69,19 @@ services:
     restart: unless-stopped
 
 ```
+## Example Nextcloud STUN configuration,
 
-![grafik](https://github.com/user-attachments/assets/b5e08e15-8ddc-42cf-bbf8-0292ca551821)
+![grafik](https://github.com/user-attachments/assets/1909f576-9e88-4d42-80ad-59ab858ede02)
 
-![grafik](https://github.com/user-attachments/assets/228206d8-11c7-47b8-ad02-b65f69214533)
+## Example Nextcloud TURN configuration
+
+![grafik](https://github.com/user-attachments/assets/abff3df2-a0fd-4a4f-aeae-ca6b4ad78cbe)
+
+## Example Nextcloud HPB configuration
+
+![grafik](https://github.com/user-attachments/assets/c657a323-2b9b-48a7-8a5d-6ccb66fa8703)
+
+## Example NPM configuration
 
 ![grafik](https://github.com/user-attachments/assets/254064a4-326f-4cdd-bc01-41298152a61e)
 
