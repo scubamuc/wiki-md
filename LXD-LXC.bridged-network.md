@@ -44,7 +44,7 @@ $ sudo nmcli con down autothernet1
 $ sudo nmcli con up br0
 ```
 
-To ensure that the bridge is started on reboot the standard connection may be deleted using `nmtui` :
+To ensure that the bridge is started on reboot the default (Auto-Ethernet) connection may be disabled or deleted using `nmtui` :
 
 `$ sudo nmtui`
 
