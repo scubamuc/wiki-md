@@ -41,8 +41,8 @@ This example will require Docker and a [Reverse proxy](https://github.com/nextcl
 
 ## Create Docker Stack
 
-1. set reverse proxy signal domain to forward (http & WSS) to the endpoints ip:8181
-2. allow inbound bypass for TURN on port 3478 (your.domain.tld:3478) 
+1. Set reverse proxy host for signal domain to forward http & WSS (Websockets Support) for port 8181
+2. Allow inbound bypass for TURN on port 3478 (your.domain.tld:3478) in Router/Firewall
    - no encryption necessary for TURN as this will be managed by Nextcloud
 
 ```
