@@ -6,11 +6,11 @@
 > 
 > You'll need to run `sysstat` on your machine for 24 Hours to get an average with `sar -p`
 >
-> ![grafik](https://github.com/user-attachments/assets/b9774bb4-b637-43e0-a6fe-b6c46d122297)
+> ![grafik](https://github.com/user-attachments/assets/beedb833-ba69-4e7a-8ad9-0a2770184cda)
 > 
-> + Average idle load: 99,54%
-> + Average CPU load: 0,46%
-> + Averege CPU load per CPU: 0,46% / 4CPU = 0,115%
+> + Average idle load: 91,04%
+> + Average CPU load: 8,96%
+> + Averege CPU load: 8,96% / 4CPU = 2,24%
 
 ```
 W = Watt
