@@ -2,7 +2,7 @@
 
 ## Talk:HPB
 
-A **H**igh **P**erformance **B**ackend (HPB) reqires three services working hand in hand; 
+A High Performance Backend (HPB) requires a signalling service and consists of three components working hand in hand;
 
 1.  STUN service which is part of TURN for discovering device IP's behind NAT or simple single service like `stun.nextcloud.com:443`
 2.  TURN service like "coturn" or "eturnal" for discovering and connecting NATed external IP's and controlling WebRTC streams
