@@ -41,7 +41,7 @@ Snap snapshots may be scripted, see example below
 
 5\. set preference variables
 
-6\. create root-cronjob for weekly execution ( ``` 0 1 * * 0 su $USER /home/$USER/bin/snapsnapshot.sh ``` )
+6\. create root-cronjob for weekly execution ( ``` 0 1 * * 0 /home/$USER/bin/snapsnapshot.sh ``` )
 
 ```bash
 #!/bin/bash
