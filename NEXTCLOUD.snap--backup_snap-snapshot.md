@@ -52,7 +52,7 @@ Snap snapshots may be scripted, see example below
 ## create target directory "sudo mkdir /media/SNAPBACKUP"
 ## snapshot rotation 30 days 
 ## create crontab as root for automation
-## 0 1 * * 0 su $USER /home/$USER/bin/snapsnapshot.sh
+## 0 1 * * 0 /home/$USER/bin/snapsnapshot.sh
 ##############################################################
 # VARIABLES #
 ##############################################################
