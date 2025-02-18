@@ -134,6 +134,17 @@ or issue command on host:
 
     sudo nextcloud.occ config:system:set default_language --value="en"
 
+## Setting Talk push notification
+
+edit `config.php` and add/edit line in `config.php`
+```
+'has_internet_connection' => 'true',
+```
+or issue command on host:
+
+    sudo nextcloud.occ config:system:set has_internet_connection --value="true"
+
+
 ## Setting default locale
 [country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
 
