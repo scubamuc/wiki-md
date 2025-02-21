@@ -373,6 +373,13 @@ lxc storage show <pool_name>
 ```
 lxc storage info <pool_name>
 ```
+## Hostverzeichnis in LXC einbinden
+
+https://documentation.ubuntu.com/lxd/en/latest/reference/devices_disk/#device-options
+
+```
+lxc config device add XCLOUD HOSTSHARE disk source=/mnt/QUELLE path=/mnt/ZIEL
+```
 
 ---
 
