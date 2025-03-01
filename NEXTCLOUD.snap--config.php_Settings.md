@@ -270,6 +270,16 @@ or issue command on host:
 sudo nextcloud.occ config:system:set skeletondirectory --value="/var/snap/nextcloud/common/skeleton"
 ```
 
+## Secure sessio cookie
+
+```
+  'session.cookie_secure' => '1',
+```
+or issue command on host:
+```
+sudo nextcloud.occ config:system:set session.cookie_secure --value="1"
+```
+
 ## Remove signup link
 
 edit `config.php` and add/edit line in `config.php`
