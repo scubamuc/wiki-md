@@ -270,14 +270,14 @@ or issue command on host:
 sudo nextcloud.occ config:system:set skeletondirectory --value="/var/snap/nextcloud/common/skeleton"
 ```
 
-## Secure sessio cookie
+## Secure session cookie
 
 ```
-  'session.cookie_secure' => '1',
+  'session.cookie_secure' => 'true',
 ```
 or issue command on host:
 ```
-sudo nextcloud.occ config:system:set session.cookie_secure --value="1"
+sudo nextcloud.occ config:system:set session.cookie_secure --value="true"
 ```
 
 ## Remove signup link
