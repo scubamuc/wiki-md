@@ -108,8 +108,8 @@ exit
 
 ## Restore snapshot using snap restore 
 
-> * When moving to new device, be sure to install Nextcloud snap first
-> * Snap restore replaces previous installation incl. certs, DB and data
+> * When moving or migrating to new device, be sure to install Nextcloud snap first
+> * Snap restore is not incremental and thus replaces previous installation incl. certs, DB and data
 > * See documentation in `snap restore --help` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
 
 ### Procedure
