@@ -7,7 +7,7 @@ browser on your own network without being blocked on the physical network locati
 Wouldn't it be nice to run a local network browser session as an app from within Nextcloud? Easy as pie!
 
 * install Docker and Docker-compose
-* set reverse proxy host for browsevm domain to forward and encrypt HTTP & WSS (Websockets Support) for port 3000 to `https://browsevm.yourdomain.tld`
+* set reverse proxy host for `browsevm` domain to forward and encrypt HTTP & WSS (Websockets Support) for port 3000 to `https://browsevm.yourdomain.tld`
 * create and run a browsevm docker stack
 
 ```
