@@ -31,7 +31,7 @@ services:
     shm_size: "1gb"
     restart: unless-stopped
   ```
-* add external sites to Nextcloud instance pointing to `https://browsevm.yourdomain.tld`
+* add external sites to your Nextcloud instance pointing to `https://browsevm.yourdomain.tld` and browse wherever you like in your fully integrated browser.
 
 ![grafik](https://github.com/user-attachments/assets/a6012b9b-81f0-4cf7-bf21-5eec0d0f556c)
 
