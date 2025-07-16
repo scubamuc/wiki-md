@@ -5,6 +5,7 @@ However an external preview generation service is easily implemented and configu
 using "Imaginary" with Docker.
 
 ## Docker stack
+or create a `docker-compose.yaml`file in place
 
 ```
 services:
