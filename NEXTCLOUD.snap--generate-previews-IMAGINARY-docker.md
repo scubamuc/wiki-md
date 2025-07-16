@@ -28,3 +28,27 @@ edit config.php manually or issue command in host to enable imaginary
 ```
 sudo nextcloud.occ config:system:set enabledPreviewProviders 0 --value="OC\\Preview\\Imaginary"
 ``` 
+### example preview array of file types
+```
+  'enabledPreviewProviders' =>
+  array (
+    0 => 'OC\\Preview\\Imaginary',
+    1 => 'OC\\Preview\\TXT',
+    2 => 'OC\\Preview\\PDF',
+    3 => 'OC\\Preview\\OpenDocument',
+    4 => 'OC\\Preview\\MSOfficeDoc',
+    5 => 'OC\\Preview\\MarkDown',
+    6 => 'OC\\Preview\\MP3',
+    7 => 'OC\\Preview\\MP4',
+    8 => 'OC\\Preview\\AVI',
+    9 => 'OC\\Preview\\Movie',
+    10 => 'OC\\Preview\\MKV',
+    11 => 'OC\\Preview\\XCF',
+    12 => 'OC\\Preview\\BMP',
+    13 => 'OC\\Preview\\GIF',
+    14 => 'OC\\Preview\\JPG',
+    15 => 'OC\\Preview\\JPEG',
+    16 => 'OC\\Preview\\SVG',
+  ),
+  'preview_imaginary_url' => 'http://192.168.2.16:8088',
+```
