@@ -9,7 +9,8 @@ using "Imaginary" with Docker.
 ```
 services:
   imaginary:
-    image: h2non/imaginary
+    image: ghcr.io/nextcloud-releases/imaginary:latest
+    # image: h2non/imaginary
     ports:
       - "8088:8088"
     environment:
