@@ -1,6 +1,6 @@
 # How to generate image previews with Imaginary in Nextcloud snap with Docker
 
-due to snap confinement the third party app ``previews genrator` fails and the default Nextcloud preview generator is cumbersome.
+due to snap confinement the third party app ``previewgenrator` fails and the default Nextcloud preview generator is cumbersome.
 However an external preview generation service is easily implemented and configured in Nextcloud snap for fast previews on the fly 
 using "Imaginary" with Docker.
 
