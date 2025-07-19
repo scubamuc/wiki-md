@@ -12,9 +12,9 @@ services:
   imaginary:
     image: ghcr.io/nextcloud-releases/aio-imaginary:latest
     ports:
-      - "8088:8088"
+      - "9000:9000"
     environment:
-      - PORT=8088
+      - PORT=9000
     command: -concurrency 50 -enable-url-source
 ```
 
@@ -22,7 +22,7 @@ services:
 
 edit config.php manually or issue command in host to enable preview generation
 ```
-sudo nextcloud.occ config:system:set preview_imaginary_url --value="http://127.0.0.1:8088"
+sudo nextcloud.occ config:system:set preview_imaginary_url --value="http://docker.service.ip.xxx:9000"
 ```
 and
 edit config.php manually or issue command in host to enable imaginary
@@ -51,5 +51,5 @@ sudo nextcloud.occ config:system:set enabledPreviewProviders 0 --value="OC\\Prev
     15 => 'OC\\Preview\\JPEG',
     16 => 'OC\\Preview\\SVG',
   ),
-  'preview_imaginary_url' => 'http://192.168.2.16:8088',
+  'preview_imaginary_url' => 'http://docker.service.ip.xxx:9000',
 ```
