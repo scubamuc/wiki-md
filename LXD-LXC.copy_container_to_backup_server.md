@@ -49,7 +49,7 @@ lxc list LXD2:
 ```
 
 Copying or syncronising containers between servers can be scripted.
-Be sure to *stop* the containers to be syncronised on ***LXD2*** server.
+Be sure to *stop* the containers to be syncronised on ***LXD2*** (secondary LXD-backup) server.
 
 Example script:
 
