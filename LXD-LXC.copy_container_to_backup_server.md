@@ -6,7 +6,7 @@ One caveat of this model is that the controller node holding the primary databas
 Stopping all containers on the secondary node at startup sounds strange, since its defying the advantage of LXD... but for this use case it is required.
 
 > [!TIP]
-> the container profiles on the secondary node should be configured to `boot.autostart=false` to prevent autromatic startup, but *don't forget to start the conainers manually* if your primary node has failed!
+> the container profiles on the secondary node should be configured to `boot.autostart=false` to prevent autromatic startup, but *don't forget to start the conainers manually* or WOL if your primary node has failed!
 
 Assuming you have two identical servers **LXD1** (primary LXD-server) and **LXD2** (secondary LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be configured. See also [remotes](https://documentation.ubuntu.com/lxd/en/latest/remotes/).
 
