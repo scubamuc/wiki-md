@@ -1,9 +1,9 @@
 # Syncronise/Copy containers between LXD nodes
 
-If an LXD-cluster with three nodes is overkill for you, a cold standby failover can easily be configured and works fine with two nodes. Be sure to configure WOL (Wake on Lan) for the cold standby node and ensure regular (skripted) container syncronisation or do it manually. Note also, container snapshots on the primary node belong to the container and are syncronised to the secondary node. You may want to prevent snapshots from being syncronised for speed and space with the option `--instance-only`.
+If an LXD-cluster with three nodes is overkill for you, a cold standby failover can easily be configured and works fine with two nodes. Be sure to configure WOL (Wake on Lan) for the cold standby node and ensure regular (scripted) container syncronisation or do it manually. Note also, container snapshots on the primary node belong to the container and are syncronised to the secondary node. You may want to prevent snapshots from being syncronised for speed and space with the option `--instance-only`.
 
-One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the containers on the secondary node are stopped as the syncronised containers have identical IP's as those on the primary node which causes network issues. 
-Stopping all containers on the secondary node at startup sounds strange, since this is one of the advantages of LXD... but for this use case it is necessary.
+One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the containers on the secondary node are stopped as the syncronised containers have identical IP's to those on the primary node which causes network issues. 
+Stopping all containers on the secondary node at startup sounds strange, since its defying the advantage of LXD... but for this use case it is required.
 
 > [!TIP]
 > the container profiles on the secondary node should be configured to `boot.autostart=false` to prevent autromatic startup, but *don't forget to start the conainers manually* if your primary node has failed!
