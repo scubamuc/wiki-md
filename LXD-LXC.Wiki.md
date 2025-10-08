@@ -262,7 +262,7 @@ bridge.ageing-time: 300
 bridge.multicast-snooping: yes
 ```
 
-Disable the standard network connection. The bridged connection should start automatically:
+Disable the default network connection. The bridged connection should start automatically:
 
 ```
 $ sudo nmcli con down standardconnection1
