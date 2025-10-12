@@ -468,3 +468,14 @@ Global Flags:
       --version        Print version number
 ```
 
+## LXC VM CPU limits and memory limits
+
+VM limits are set in the VM-config and the VM needs to be stopped!
+```
+$ lxc config set <VMNAME> limits.cpu=4
+$ lxc config set <VMNAME> limits.memory=4GB
+```
+the following error means you need to stop the VM instance to change memory limits
+```
+Error: Failed updating memory limit: Cannot increase memory size beyond boot time size when VM is running (Boot time size 1024MiB, new size 3814MiB)
+```
