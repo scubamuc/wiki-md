@@ -1,7 +1,8 @@
-#   systemctl daemon-reload
-#   systemctl restart ssh.socket
-
 # LXD setup with macvlan
+
+be aware that the recommended setup is a bridged network (see https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md). 
+Setting up LXD/LXC with macvlan is easiest to get up and running quickly. There are howerver caveats; it is not possible to ssh into the container
+from the host! to access the container use `lxc shell <CONTAINERNAME>`
 
 * `sudo snap install lxd`
 * `lxd init`
@@ -24,5 +25,11 @@ Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:
 
 * add macvlan to default profile, defining network device (find network device `ip a`)
 ```
-lxc profile device add default eth0 nic nictype=macvlan parent=enp0s31f6
+lxc profile device add default eth0 nic nictype=macvlan parent=enp0xxx
+```
+## Launch you container
+
+* launch your first container (omit <CONTAINERNAME> for random name)
+```
+lxc launch ubuntu:24.04 <CONTAINERNAME>
 ```
