@@ -1,6 +1,6 @@
 # LXD setup with macvlan
 
-be aware that the recommended setup is a bridged network (see https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md). 
+Be aware that the recommended setup is a bridged network (see https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md). 
 Setting up LXD/LXC with macvlan is easiest to get up and running quickly. There are howerver caveats; it is not possible to ssh into the container
 from the host! to access the container use `lxc shell <CONTAINERNAME>`
 
