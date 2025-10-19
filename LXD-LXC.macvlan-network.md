@@ -29,7 +29,7 @@ lxc profile device add default eth0 nic nictype=macvlan parent=enp0xxx
 ```
 ## Launch you container
 
-* launch your first container (omit <CONTAINERNAME> for random name)
+* launch your first container (omit `<CONTAINERNAME>` for random name)
 ```
 lxc launch ubuntu:24.04 <CONTAINERNAME>
 ```
