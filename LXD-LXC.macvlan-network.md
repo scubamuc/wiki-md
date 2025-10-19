@@ -27,7 +27,7 @@ Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:
 ```
 lxc profile device add default eth0 nic nictype=macvlan parent=enp0xxx
 ```
-## Launch you container
+## Launch your container
 
 * launch your first container (omit `<CONTAINERNAME>` for random name)
 ```
