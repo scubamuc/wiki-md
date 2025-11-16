@@ -175,6 +175,44 @@ lxc info CONTAINER
 lxc copy CONTAINER/SNAPSHOT NEW-CONTAINER
 ```
 
+## create a vm instead of a container
+
+### create vm
+```
+lxc launch ubuntu:24.04 ubuntu --vm
+```
+Be aware, the default `qemu` cpu and memory will be `1cpu` and `1GB` and the default disk size wll be 10GB!
+
+### set cpu, memory 
+
+```
+lxc stop <VMNAME> 
+
+lxc config set <VMNAME> limits.memory=4GB 
+
+lxc config set <VMNAME> limits.cpu=2
+
+lxc start DOCKER-WRK
+```
+
+### enlarge default disk size
+```
+lxc config edit <VMNAME>
+```
+
+edit config and enlarge `disk` size (disk canno be shrunk!)
+
+```
+devices:
+  root:
+    path: /
+    pool: <POOLNAME>
+    size: 20GiB
+    type: disk
+
+```
+
+
 ### Desktop images
 
 In addition to cloud images for a variety of distributions, we also support desktop images that allow you to launch a desktop VM with no additional configuration needed.
