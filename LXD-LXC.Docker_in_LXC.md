@@ -96,3 +96,55 @@ sudo reinstall apparmor
 ```
 
 restart the container
+
+----
+
+# Run Docker inside LXC vm (qemu virtual machine)
+
+it may be easier for you to run Docker inside an LXC vm. This method is not as resource freindly as LXC container due to vm os overhead.
+In addition the container cannot be moved, copied or backed up while its running and depending on the disksize you've created, does not 
+allow incremental LXC snapshots and will require more diskspace and cause transfer trafic. On the other hand, vm's are stable and not as
+susceptible to LXD apparmor issues.
+
+> [!IMPORTANT]
+> Be aware, the default LXC vm `qemu` cpu and memory will be `1cpu` and `1GB` and the default disk size wll be 10GB!
+
+## create an LXC vm
+
+### launch lxc vm
+```
+lxc launch ubuntu:24.04 <VMNAME> --vm
+```
+### launch lxc vm define cpu, ram and disk
+```
+lxc launch ubuntu:24.04 <VMNAME> --vm -c limits.cpu=2 -c limits.memory=2GiB -d root,size=20GiB
+```
+
+### set cpu, memory 
+```
+lxc stop <VMNAME> 
+
+lxc config set <VMNAME> limits.memory=4GB 
+
+lxc config set <VMNAME> limits.cpu=2
+
+lxc start <VMNAME>
+```
+
+### enlarge default root disk size
+```
+lxc config edit <VMNAME>
+```
+
+edit config and enlarge `disk` size (disk canno be shrunk!)
+
+```
+devices:
+  root:
+    path: /
+    pool: <POOLNAME>
+    size: 20GiB
+    type: disk
+
+```
+
