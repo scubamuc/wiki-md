@@ -110,13 +110,13 @@ lxc info CONTAINERNAME                # detailed info about one container
 ### Rename container
 
 ```
-lxc move CONTAINER NEWNAME
+lxc move CONTAINERNAME NEWNAME
 ```
 
 or
 
 ```
-lxc rename CONTAINER NEWNAME
+lxc rename CONTAINERNAME NEWNAME
 ```
 
 ### Configuration
@@ -138,6 +138,10 @@ Configuration settings can be saved as **profiles**.
 lxc exec CONTAINERNAME -- PROGRAM OPTIONS
 lxc exec CONTAINERNAME sh
 lxc exec CONATINERNAME --env KEY=VALUE PROGRAM   # environment variable
+```
+or
+```
+lxc shell CONTAINERNAME
 ```
 
 This command runs the program in all the namespaces and cgroups of the container. The program must exist inside the container.
@@ -169,7 +173,7 @@ lxc move CONTAINERNAME/SNAPNAME CONTAINERNAME/NEWSNAPNAME  # rename snapshot
 lxc info CONTAINER
 ```
 
-1. Copy snapshot to new container
+2. Copy snapshot to new container
 
 ```
 lxc copy CONTAINER/SNAPSHOT NEW-CONTAINER
