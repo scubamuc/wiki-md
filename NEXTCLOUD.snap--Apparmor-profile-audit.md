@@ -11,6 +11,8 @@ Apparmor comes with a predefined profiles, but there are also additional upstrea
 ```
 sudo apt install apparmor-profiles-extra
 ```
+### Install `squashfuse` on LXC host
+If you're running your Nextcloud snap in LXC --> it is recommended to run `sudo apt install squashfuse` in the LXC host.
 
 ## Manual Apparmor profile auditing
 
