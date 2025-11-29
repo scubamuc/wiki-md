@@ -405,6 +405,19 @@ One caveat of this model is that the controller node holding the primary databas
 
 Assuming you have two identical servers **LXD1** (primary LXD-server) and **LXD2** (secondary LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be configured.
 
+You’ll need to enable the LXD servers to be listening on the network by using:
+```
+lxc set core.https_address=<listen_ip_address>
+```
+And then setup trust token on your target LXD host using:
+```
+lxc config trust add
+```
+And then add a remote to your local lxc client using:
+```
+lxc remote add <remote_name> <token generated above>
+```
+
 #### On production **LXD1** server
 
 Check remote servers:
