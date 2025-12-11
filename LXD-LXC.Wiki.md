@@ -204,7 +204,7 @@ lxc start DOCKER-WRK
 lxc config edit <VMNAME>
 ```
 
-edit config and enlarge `disk` size (disk canno be shrunk!)
+edit config and enlarge disk `size` (disk canno be shrunk!) use GiB (GibitBytes) or use GB (Gigabytes)
 
 ```
 devices:
