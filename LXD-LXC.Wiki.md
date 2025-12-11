@@ -65,7 +65,7 @@ lxc stop CONTAINER
 #### Start container
 
 ```
-lxc stop CONTAINER 
+lxc start CONTAINER 
 ```
 
 #### Stop all containers
