@@ -6,19 +6,18 @@
 name: nc-appapi-harp
 services:
     nextcloud-appapi-harp:
-        environment:
-            - HP_SHARED_KEY=<yourpasswordhere>
-            - NC_INSTANCE_URL=https://127.0.0.1:8080
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - "`pwd`/certs:/certs"
+        image: ghcr.io/nextcloud/nextcloud-appapi-harp:release
         container_name: appapi-harp
         hostname: appapi-harp
-        restart: unless-stopped
+        environment:
+            - HP_SHARED_KEY=nc-snap%appapitest
+            - NC_INSTANCE_URL=https://xcloud.scubamuc.dedyn.io
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
         ports:
             - 8780:8780
             - 8782:8782
-        image: ghcr.io/nextcloud/nextcloud-appapi-harp:release
+        restart: unless-stopped
 ```
 
 so we're all very excited about **Nextcloud Hub 25 Autumn** running nicely as a snap! 
