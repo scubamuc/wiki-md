@@ -3,7 +3,7 @@
 ### docker-compose.yaml
 
 ```
-name: <your project name>
+name: nc-appapi-harp
 services:
     nextcloud-appapi-harp:
         environment:
