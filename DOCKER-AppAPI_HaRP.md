@@ -14,6 +14,7 @@ services:
             - NC_INSTANCE_URL=https://xcloud.scubamuc.dedyn.io
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
+        network_mode: bridge
         ports:
             - 8780:8780
             - 8782:8782
