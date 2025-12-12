@@ -1,6 +1,6 @@
 ## AppAPI HaRP Docker sock proxy in Nextcloud snap
 
-### docker-compose.yaml
+### docker stack
 
 ```
 name: nc-appapi-harp
