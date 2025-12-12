@@ -7,7 +7,7 @@ name: nc-appapi-harp
 services:
     nextcloud-appapi-harp:
         environment:
-            - HP_SHARED_KEY=nc-snap%appapitest
+            - HP_SHARED_KEY=<yourpasswordhere>
             - NC_INSTANCE_URL=https://127.0.0.1:8080
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
@@ -30,7 +30,7 @@ so to make this work; --> did this by the book (https://docs.nextcloud.com/serve
 * now you need to install a docker socket to be able to connect to the local docker instance and to be able to install docker containers from the Nextcloud AppAPI interface: --> issue the following command to install and run the docker socket proxy and the local reverse proxy (HaRP)
 ```
 docker run \
-  -e HP_SHARED_KEY="nc-snap%appapitest" \
+  -e HP_SHARED_KEY="yourpasswordhere" \
   -e NC_INSTANCE_URL="https://127.0.0.1:8080" \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v `pwd`/certs:/certs \
