@@ -136,7 +136,7 @@ lxc start <VMNAME>
 lxc config edit <VMNAME>
 ```
 
-edit config and enlarge `disk` size (disk canno be shrunk!)
+edit config and enlarge `disk` size (disk cannot be shrunk!)
 
 ```
 devices:
