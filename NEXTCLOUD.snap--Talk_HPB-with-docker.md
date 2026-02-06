@@ -88,9 +88,10 @@ services:
 
 ----
 
-## Multiple signal servers
+## Multiple signal servers -- Multi tenent setup -- Multi domain setup
 
 https://github.com/nextcloud/all-in-one/issues/5512#issuecomment-2453549033
+https://help.nextcloud.com/t/high-performance-backend-for-talk-on-nextcloud-with-docker/215828
 
 ### Docker Stack example
 
