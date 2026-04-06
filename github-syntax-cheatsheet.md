@@ -62,15 +62,14 @@
 ## Github center align images, image display size
 
 <p align="center" width="100%">
-    <img width="25%" src="https://github.com/user-attachments/assets/91d50e8e-3aa6-418a-b091-d97c9c29079f" alt="first start">
+    <img width="15%" src="https://github.com/user-attachments/assets/e32a41fc-59ad-45db-8bcc-572363f8ab7b" alt="Nextcloud snap">
 </p>
 
 ```
 <p align="center" width="100%">
-    <img width="25%" src="https://github.com/user-attachments/assets/91d50e8e-3aa6-418a-b091-d97c9c29079f" alt="first start">
+    <img width="15%" src="https://github.com/user-attachments/assets/e32a41fc-59ad-45db-8bcc-572363f8ab7b" alt="Nextcloud snap">
 </p>
 ```
-
 ----
 
 ## Shortcuts to remember
