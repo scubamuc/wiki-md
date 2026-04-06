@@ -62,7 +62,7 @@
 ## Github center align images, image display size
 
 <p align="center" width="100%">
-    <img width="15%" src="https://github.com/user-attachments/assets/e32a41fc-59ad-45db-8bcc-572363f8ab7b" alt="Nextcloud snap">
+    <img width="10%" src="https://github.com/user-attachments/assets/e32a41fc-59ad-45db-8bcc-572363f8ab7b" alt="Nextcloud snap">
 </p>
 
 ```
