@@ -45,12 +45,31 @@
 
 ----
 
-## Github center align images, image display size
+## Github center align heading
 
+<h1 align="center">Heading1</h1>
+<h2 align="center">Heading2</h2>
+<h3 align="center">Heading3</h3>
+
+```
+<h1 align="center">Heading1</h1>
+<h2 align="center">Heading2</h2>
+<h3 align="center">Heading3</h3>
+```
+
+----
+
+## Github center align images, image display size
 
 <p align="center" width="100%">
     <img width="25%" src="https://github.com/user-attachments/assets/91d50e8e-3aa6-418a-b091-d97c9c29079f" alt="first start">
 </p>
+
+```
+<p align="center" width="100%">
+    <img width="25%" src="https://github.com/user-attachments/assets/91d50e8e-3aa6-418a-b091-d97c9c29079f" alt="first start">
+</p>
+```
 
 ----
 
