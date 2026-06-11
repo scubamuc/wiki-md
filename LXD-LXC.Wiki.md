@@ -534,3 +534,13 @@ the following error means you need to stop the VM instance to change memory limi
 ```
 Error: Failed updating memory limit: Cannot increase memory size beyond boot time size when VM is running (Boot time size 1024MiB, new size 3814MiB)
 ```
+
+## Steps to resolve Apparmor update issues when running snaps on LXD/LXC as snap
+
+* **on (LXD) host**: `snap disable snapd && snap enable snapd` to re initialise updated Apparmor profiles on host
+* **on (LXC) host** running Nextcloud snap: `apt update && apt upgrade` -->  issue command: `snap disable snapd && snap enable snapd` to re initialise Apparmor profiles on LXC
+* the Apparmor documentation mentions "snap is different" but doesn't explain why and how. Due to running LXD as snap on the host system (bare-metal), Apparmor profile updates/upgrades should be re initialised after reboot. LXC running on that (LXD) host will not re initialise Apparmor profile changes automatically and will need to be re initialised manually by disabling and re enabling snapd on LXC.
+
+Since running LXD as a snap is literally running containerised LXD, with LXC-containers running a containerized Nextcloud snap, thus running containers within containers in a container, causing Apparmor profile version inconsistencies within nested containers.
+
+Upgrading and re initialising Apparmor profiles within each nested container step by step seems the only method to consistently make Nextcloud snap available after Apparmor profile upgrades.
