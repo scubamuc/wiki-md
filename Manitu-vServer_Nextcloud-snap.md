@@ -40,7 +40,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 * fire up your [Manitu vServer](https://www.manitu.de/vserver) using **Ubuntu LTS** as OS and make sure 'snapd' is installed,
     * issue command `# apt install snapd`
     * issue command `# snap install nextcloud`
-    * issue command `# nextcloud.manual-install <ADMINUSER> <PASSWORD>` (replace with your own ADMINUSER and **secure** PASSWORD)
+    * issue command `# nextcloud.manual-install <ADMINUSER> <PASSWORD>` (replace with your own adminuser and **secure** password)
     * [configure Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) manually
     * install apps from Nextcloud App Store
 
