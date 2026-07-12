@@ -43,12 +43,17 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
     * issue command `# nextcloud.manual-install <ADMINUSER> <PASSWORD>` (replace with your own adminuser and **secure** password)
     * [configure Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) manually
     * install apps from Nextcloud App Store
-    * done :heavy_check_mark: 
+* complete [HTTPS Lets Encrypt certification](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#https-encryption-with-lets-encrypt) `# nextcloud.enable-https lets-encrypt`
+* set [trusted domain/domains](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#trusted-domains-configuration) `# nextcloud.occ config:system:set trusted_domains 0 --value="<CLOUD.MY.DOMAIN.TLD>"`
+* truncate logs and restart the snap `# truncate -s 0 /var/snap/nextcloud/current/logs/nextcloud.log && snap restart nextcloud`
+* open `<CLOUD.MY.DOMAIN.TLD>` in browser, install default apps and enjoy Nextcloud
+* install apps from Nextcloud App Store
+* done :heavy_check_mark:  
 
 ### Option 2. scripted install
 
 * Nextcloud snap installation using a shell script
-  * fire up your [Manitu vServer](https://www.manitu.de/vserver)
+  * fire up your [Manitu vServer](https://www.manitu.de/vserver) using **Ubuntu LTS** as OS and make sure 'snapd' is installed
   * copy the bash script to your vServer and make executable `# chmod +x <SKRIPTNAME>`
   * edit and replace `<VARIABLES>`, `<ADMINUSER>` and `<PASSWORD>` before executing the script
   * execute the script
