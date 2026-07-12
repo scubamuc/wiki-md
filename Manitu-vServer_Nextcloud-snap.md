@@ -52,8 +52,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 
 ### Option 2. scripted install
 
-* Nextcloud snap installation using a shell script
-  * fire up your [Manitu vServer](https://www.manitu.de/vserver) using **Ubuntu LTS** as OS and make sure 'snapd' is installed
+* fire up your [Manitu vServer](https://www.manitu.de/vserver) using **Ubuntu LTS** as OS and make sure 'snapd' is installed
   * copy the bash script to your vServer and make executable `# chmod +x <SKRIPTNAME>`
   * edit and replace `<VARIABLES>`, `<ADMINUSER>` and `<PASSWORD>` before executing the script
   * execute the script
