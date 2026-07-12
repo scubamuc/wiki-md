@@ -30,7 +30,7 @@ Before getting started be aware of what you expect from your Nextcloud instance 
 Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-snap/nextcloud-snap) and the [wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki).
 
 > [!IMPORTANT]
-> The [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) team is neither responsible for [Manitu vServer](https://www.manitu.de/vserver/) nor for issues pertaining to [Manitu](https://www.manitu.de). For Nextcloud issues refer to  [Nextcloud community support](https://help.nextcloud.com).
+> The [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) team is neither responsible for [Manitu vServer](https://www.manitu.de/vserver/) nor for issues pertaining to [Manitu](https://www.manitu.de) services. For Nextcloud issues refer to  [Nextcloud community support](https://help.nextcloud.com).
 
 ----
 <h2 align="center">Install Nextcloud snap on Manitu vServer</h2>
