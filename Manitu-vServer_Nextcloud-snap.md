@@ -33,7 +33,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 > The [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) team is neither responsible for [Manitu vServer](https://www.manitu.de/vserver/) nor for issues pertaining to [Manitu](https://www.manitu.de). For Nextcloud issues refer to  [Nextcloud community support](https://help.nextcloud.com).
 
 ----
-<h2 align="center">Install Nextcloud snap</h2>
+<h2 align="center">Install Nextcloud snap on Manitu vServer</h2>
 
 ### Option 1. manual install
 
