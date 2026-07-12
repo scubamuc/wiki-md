@@ -1,7 +1,54 @@
-## Install Nextcloud snap on Manitu vServer
+<h1 align="center">Install Nextcloud snap on Manitu vServer</h1>
 
-* fire up your VPS and make sure snapd is installed, or run `# apt install snapd`
-* issue command `# nextcloud.manual-install <ADMINUSER> <PASSWORD>` and continue manually **or**
+<p align="center" width="100%">
+    <img width="15%" src="https://github.com/user-attachments/assets/e32a41fc-59ad-45db-8bcc-572363f8ab7b" alt="Nextcloud snap"> 
+</p>
+
+<h2 align="center">Nextcloud snap requirements</h2>
+
+You have decided to use Nextcloud snap to set up Nextcloud as a safe home for your data, that's great!
+
+Nextcloud snap is a community driven [snap installation](https://snapcraft.io/nextcloud) making [Nextcloud](https://nextcloud.com/) easy to install and simple to maintain. The ideal Nextcloud snap is an "install and forget" Nextcloud instance that works on most architectures and [updates itself](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Managing-Nextcloud-snap-with-Snap#managing-automatic-updates) without requiring administrative skills. Combining Nextcloud with [snapd](https://ubuntu.com/core/services/guide/snaps-intro) makes it a perfect fit for IoT or scalable environments. Snapd is a secure and robust technology which the Nextcloud snap team has embraced. The team packages the latest stable upstream Nextcloud, adds some snap magic and releases that snap package upon testing fresh installs and automated updates, so that the Nextcloud snap community has peace of mind.
+
+However, Nextcloud snap is opinionated. The following recommended components are included and not optional;
+
+- [x] Nextcloud snap uses recommended Apache 
+- [x] Nextcloud snap uses recommended MySQL 
+- [x] Nextcloud snap uses recommended PHP 
+- [x] Nextcloud snap uses recommended Redis 
+
+----
+
+Before getting started be aware of what you expect from your Nextcloud instance and what system requirements have to be met to fulfil your needs. There are various aspects you might consider;
+- [x] number of users
+- [x] storage & space requirements
+- [x] power consumption & efficiency
+- [x] network & connectivity
+- [x] backup & redundancy
+- [ ] etc. ...
+
+Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-snap/nextcloud-snap) and the [wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki).
+
+> [!IMPORTANT]
+> The [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) team is neither responsible for [Manitu vServer](https://www.manitu.de/vserver/) nor for issues pertaining to [Manitu](https://www.manitu.de). For Nextcloud issues refer to  [Nextcloud community support](https://help.nextcloud.com).
+
+----
+<h2 align="center">Install Nextcloud snap</h2>
+
+### Manual install
+
+* fire up your [Manitu vServer](https://www.manitu.de/vserver) using **Ubuntu LTS** as OS and make sure snapd is installed,
+    * issue command `# apt install snapd`
+    * issue command `# snap install nextcloud`
+    * issue command `# nextcloud.manual-install <ADMINUSER> <PASSWORD>` (replace with you own ADMINUSER and PASSWORD)
+    * [configure Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) manually
+    * install apps from Nextcloud App Store
+
+**or**
+
+### Scripted install
+
+* automate installation using a shell script
   * copy the bash script to your VPS and make executable `# chmod +x <SKRIPTNAME>`
   * edit and replace `<VARIABLES>`, `<ADMINUSER>` and `<PASSWORD>` in the script
   * execute the script
@@ -9,11 +56,12 @@
 * set [trusted domain/domains](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#trusted-domains-configuration) `# nextcloud.occ config:system:set trusted_domains 0 --value="<CLOUD.MY.DOMAIN.TLD>"`
 * truncate logs and restart the snap `# truncate -s 0 /var/snap/nextcloud/current/logs/nextcloud.log && snap restart nextcloud`
 * open `<CLOUD.MY.DOMAIN.TLD>` in browser, install default apps and enjoy Nextcloud
+* install apps from Nextcloud App Store
 * done :heavy_check_mark: 
 
 #### Example script: 
 
-> [!IMPORTANT]
+> [!WARNING]
 > :warning: **never copy and paste!** without reading the script first :warning:
 >
 > **read the script** :eyes: *edit* and *replace* `<variables>` & values :exclamation:
