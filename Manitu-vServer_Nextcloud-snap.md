@@ -50,7 +50,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 * Nextcloud snap installation using a shell script
   * fire up your [Manitu vServer](https://www.manitu.de/vserver)
   * copy the bash script to your vServer and make executable `# chmod +x <SKRIPTNAME>`
-  * edit and replace variables in the script
+  * edit and replace `<VARIABLES>`, `<ADMINUSER>` and `<PASSWORD>` before executing the script
   * execute the script
 * complete [HTTPS Lets Encrypt certification](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#https-encryption-with-lets-encrypt) `# nextcloud.enable-https lets-encrypt`
 * set [trusted domain/domains](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#trusted-domains-configuration) `# nextcloud.occ config:system:set trusted_domains 0 --value="<CLOUD.MY.DOMAIN.TLD>"`
