@@ -43,6 +43,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
     * issue command `# nextcloud.manual-install <ADMINUSER> <PASSWORD>` (replace with your own adminuser and **secure** password)
     * [configure Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) manually
     * install apps from Nextcloud App Store
+    * * done :heavy_check_mark: 
 
 ### Option 2. scripted install
 
