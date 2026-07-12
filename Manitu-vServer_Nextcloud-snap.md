@@ -35,7 +35,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 ----
 <h2 align="center">Install Nextcloud snap</h2>
 
-### Manual install
+### Option 1. Manual install
 
 * fire up your [Manitu vServer](https://www.manitu.de/vserver) using **Ubuntu LTS** as OS and make sure 'snapd' is installed,
     * issue command `# apt install snapd`
@@ -44,9 +44,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
     * [configure Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) manually
     * install apps from Nextcloud App Store
 
-**or**
-
-### Scripted install
+### Option 2. Scripted install
 
 * automate installation using a shell script
   * copy the bash script to your VPS and make executable `# chmod +x <SKRIPTNAME>`
