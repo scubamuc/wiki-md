@@ -48,7 +48,8 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 ### Option 2. scripted install
 
 * automate [Manitu vServer](https://www.manitu.de/vserver) installation using a shell script
-  * copy the bash script to your VPS and make executable `# chmod +x <SKRIPTNAME>`
+  * fire up you [Manitu vServer](https://www.manitu.de/vserver)
+  * copy the bash script to your vServer and make executable `# chmod +x <SKRIPTNAME>`
   * edit and replace `<VARIABLES>`, `<ADMINUSER>` and `<PASSWORD>` in the script
   * execute the script
 * complete [HTTPS Lets Encrypt certification](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#https-encryption-with-lets-encrypt) `# nextcloud.enable-https lets-encrypt`
