@@ -45,7 +45,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
 * get your [HTTPS Lets Encrypt certificate](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#https-encryption-with-lets-encrypt) `# nextcloud.enable-https lets-encrypt`
 * set [trusted domain/domains](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap#trusted-domains-configuration) `# nextcloud.occ config:system:set trusted_domains 0 --value="<CLOUD.MY.DOMAIN.TLD>"`
 * open `<CLOUD.MY.DOMAIN.TLD>` in browser, install default apps and enjoy Nextcloud
-* install apps from Nextcloud App Store
+* install more apps from Nextcloud App Store
 * done :heavy_check_mark:  
 
 ### Option 2. scripted install
@@ -56,6 +56,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
   * edit and replace `<VARIABLES>`, `<ADMINUSER>` and `<PASSWORD>` before executing the script
   * execute the script
 * open `<CLOUD.MY.DOMAIN.TLD>` in browser, install default apps and enjoy Nextcloud
+* install more apps from Nextcloud App Store
 * done :heavy_check_mark: 
 
 #### Example script: 
