@@ -72,7 +72,7 @@ Plan your setup. Do some research, read the [docs](https://github.com/nextcloud-
  #!/bin/bash
 #################################################################################
                 ## -scubamuc- https://scubamuc.github.io/ ##
-## Setup Nextcloud snap testing environment --> VPS                            
+## Setup Nextcloud snap instance --> VPS                            
 ## Script assumes instance is a VPS with port 80 and 443 internet facing
 ## Script assumes you are root on VPS, no sudo required!  
 ## IMPORTANT: Script needs to be edited for your values --value=<yourvalue>
