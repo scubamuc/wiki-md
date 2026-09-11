@@ -62,7 +62,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 > Never make this available to the outside world without HTTPS encryption and **secure** credentials
 
 > [!NOTE]
-> For HTTPS encryption use a reverse proxy to forward host http on port 8290 to https, blocking common exploits, enabling websockets support
+> For HTTPS encryption use a reverse proxy to forward host http on port 8290 to https, blocking common exploits, enabling websockets support and activating access lists!
 
 ### Start-up automatically on boot-up and execute as user
 
