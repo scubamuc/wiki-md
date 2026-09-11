@@ -66,7 +66,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 
 ### Start-up automatically on boot-up and execute as user
 
-> [!NOTE]
+> [!TIP]
 > There are different methods to get TTYD to start on boot-up
 > 1. [systemd service](https://linuxvox.com/blog/automatically-run-a-program-on-startup-under-linux-ubuntu/#method-1-using-systemd-recommended-for-services)
 > 2. [systemd user service](https://linuxvox.com/blog/automatically-run-a-program-on-startup-under-linux-ubuntu/#optional-using-systemd-user-services-no-root-required)
