@@ -1,7 +1,13 @@
-# TTYD shell in a browser
-see project README https://github.com/tsl0922/ttyd
+# TTYD shell in Nextcloud
 
-see [ttyd-wiki](https://github.com/tsl0922/ttyd/wiki)
+**Links**
+*  [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap)
+*  [TTYD GitHub](https://github.com/tsl0922/ttyd)
+   * [TTYD-wiki](https://github.com/tsl0922/ttyd/wiki)
+
+In some situations you may need to access your local shell remotely only to find you're caught behind restrictive corporate firewalls where you're unable to VPN into your network. Without VPN or SSH or any functional secure connectivity, having only HTTPS available you're certainly stuck, unless you are able to connect to your shell over HTTPS in Nextcloud within a browser.
+
+There are a couple of web-shell tools available, like [shellinabox](https://github.com/shellinabox/shellinabox) (development ceased ages ago) [WEtty](https://github.com/butlerx/wetty) (Snap discontinued) and [TTYD](https://github.com/tsl0922/ttyd). While SIAB was my go-to tool, there were security concerns. Being a snap user involved in the [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) community, I required a simple quick secure setup, to get up and running in minutes and as an added bonus, integrate shell access into my Nextcloud snap instance.
 
 ## Install TTYD as a snap
 
@@ -94,3 +100,23 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' bash
 * make script executable `chmod +x ~/bin/StartTTYD.sh`
 * edit root crontab: `sudo crontab -e`
 * add crontab `@reboot su - <USER> /home/<USER>/bin/StartTTYD.sh` (be aware, replace `<USER>` with your username, full path is required)
+
+  # Add TTYD web-shell to you Nextcloud instance
+
+1.  Install the [external sites app](https://apps.nextcloud.com/apps/external) in Nextcloud:
+    * Add your web-shell to external sites
+<p align="center" width="100%">
+    <img width=50% alt="grafik" src="https://github.com/user-attachments/assets/6357620f-8c6b-4bf6-a877-86f71fe2f75a" />
+</p>
+
+2.  Access your web-shell from Nextcloud
+    * Enter credentials
+<p align="center" width="100%">
+    <img width=50% alt="grafik" src="https://github.com/user-attachments/assets/0139239e-ede6-4baf-bf6c-c5fd3f594ec6" />
+</p>
+
+3.  Use web-shell in your Nextcloud instance
+<p align="center" width="100%">
+    <img width=50% alt="grafik" src="https://github.com/user-attachments/assets/a6bc396e-8920-459d-b3ef-e5905e840bbb" />
+</p>
+
