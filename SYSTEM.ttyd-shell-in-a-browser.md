@@ -101,7 +101,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' bash
 * edit root crontab: `sudo crontab -e`
 * add crontab `@reboot su - <USER> /home/<USER>/bin/StartTTYD.sh` (be aware, replace `<USER>` with your username, full path is required)
 
-  # Add TTYD web-shell to you Nextcloud instance
+  # TTYD web-shell in your Nextcloud instance
 
 1.  Install the [external sites app](https://apps.nextcloud.com/apps/external) in Nextcloud:
     * Add your web-shell to external sites
