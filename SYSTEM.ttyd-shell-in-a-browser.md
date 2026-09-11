@@ -11,9 +11,9 @@ There are a couple of web-shell tools available, like [shellinabox](https://gith
 
 ## Install TTYD as a snap
 
-- Install ttyd from snapstore:  `sudo snap install ttyd --classic`
-- Run quick test on host, issue command: `ttyd bash`
-- Access shell in browser `http://localhost:7681`
+* Install ttyd from snapstore:  `sudo snap install ttyd --classic`
+  - Run quick test on host, issue command: `ttyd bash`
+  - Access shell in browser `http://localhost:7681`
 
 ### Options
 
@@ -52,19 +52,21 @@ USAGE:
     -h, --help              Print this text and exit
 ```
 
-### Example
-```
-ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
-```
-* start ttyd with sane options:  
+### Example configuration (good security)
+
+* start ttyd with options:  
   * `-p` use `port:8290` or any other  
   * `-W` writeable  
   * `-O` check origin  
   * `-m 1` allow only 1 client  
-  * `-c` request credentials on connect (replace `<user>`:`<password>` with your own **secure** credentials)
+  * `-c` request (basic auth) credentials on connect (replace `<user>`:`<password>` with your own **secure** credentials)
     * **NOTE**: these are HTTP access (`.htaccess`) credentials and not *system-user* credentials!
   * `-t fontSize=16` ⟶ change font size to 16 for better reading
- 
+
+Issue command in shell:
+```
+ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
+```
 > [!CAUTION]
 > ### Safety first
 > Never make this available to the outside world without HTTPS encryption and **secure** credentials!
