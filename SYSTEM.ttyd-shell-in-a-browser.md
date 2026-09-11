@@ -57,7 +57,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
   * `-m 1` allow only 1 client  
   * `-c` request credentials on connect (replace `<user>`:`<password>` with your own **secure** credentials)
     * **NOTE**: these are HTTP access (`.htaccess`) credentials and not *system-user* credentials!
-  * `-t fontSize=16` ⟶ change font size to 16
+  * `-t fontSize=16` ⟶ change font size to 16 for better reading
  
 > [!CAUTION]
 > ### Safety first
