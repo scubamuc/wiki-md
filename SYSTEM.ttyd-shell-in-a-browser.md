@@ -106,7 +106,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' bash
 
 # TTYD web-shell in your Nextcloud
 
-1.  Install the [external sites app](https://apps.nextcloud.com/apps/external) in Nextcloud:
+1.  Install the [External sites app](https://apps.nextcloud.com/apps/external) in Nextcloud:
     * Add your web-shell to external sites
 <p align="center" width="100%">
     <img width=50% alt="grafik" src="https://github.com/user-attachments/assets/6357620f-8c6b-4bf6-a877-86f71fe2f75a" />
