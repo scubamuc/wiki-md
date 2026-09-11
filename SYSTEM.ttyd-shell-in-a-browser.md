@@ -69,6 +69,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 > [!NOTE]
 > ### encryption
 > For HTTPS encryption use a reverse proxy to forward host http on port 8290 to https, blocking common exploits, enabling websockets support and activating access lists!
+> Enable / disable the host on demand!
 
 ### Start-up automatically on boot-up and execute as user
 
