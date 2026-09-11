@@ -60,7 +60,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
   * `-t fontSize=16` ⟶ change font size to 16
  
 > [!CAUTION]
-> Never make this available to the outside world without HTTPS encryption and **secure** credentials
+> Never make this available to the outside world without HTTPS encryption and **secure** credentials, better yet --> use a reverse proxy enabling/disabling the port on demand!
 
 > [!NOTE]
 > For HTTPS encryption use a reverse proxy to forward host http on port 8290 to https, blocking common exploits, enabling websockets support and activating access lists!
