@@ -70,8 +70,8 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 > [!CAUTION]
 > ### Safety first
 > Never make this available to the outside world without HTTPS encryption and **secure** credentials!
-> * best security --> access only locally
->   * optional --> use a VPN and acces only locally
+> * best security --> allow only local access
+>   * optional --> use a VPN for local access
 > * good security --> use a reverse proxy enabling/disabling the host on demand!
 
 
