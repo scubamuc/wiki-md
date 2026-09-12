@@ -60,7 +60,7 @@ USAGE:
   * `-O` check origin  
   * `-m 1` allow only 1 client  
   * `-c` request (basic auth) credentials on connect (replace `<user>`:`<password>` with your own **secure** credentials)
-    * **NB**: these are HTTP access-user (`.htaccess`) credentials and not *system-user* credentials!
+    * be aware that these are HTTP access-user (`.htaccess`) credentials and not *system-user* credentials!
   * `-t fontSize=16` ⟶ change font size to 16 for better reading
 
 Issue command in shell:
