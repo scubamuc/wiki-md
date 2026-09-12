@@ -102,6 +102,10 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
 * add crontab `@reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
   * be aware, replace `<user>` with htaccess-user name and `<sysuser>` with your system user name
 
+----
+#### or
+----
+
 #### Create root cronjob to execute a shell-script to start-up as user
 
 * create a bash script `StartTTYD.sh` in user /bin directory:
