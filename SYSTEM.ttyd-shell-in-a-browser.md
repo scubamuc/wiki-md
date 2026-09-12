@@ -55,7 +55,7 @@ USAGE:
 ### Example configuration (good security)
 
 * start ttyd with options:  
-  * `-p` use non-default `port:8290` or any other  
+  * `-p` use non-default e.g `port:8290` or any other  
   * `-W` writeable  
   * `-O` check origin  
   * `-m 1` allow only 1 client  
