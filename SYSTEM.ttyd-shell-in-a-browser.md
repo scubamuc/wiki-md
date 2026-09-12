@@ -74,7 +74,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
 
 > [!CAUTION]
 > ### Security first
-> Never make you shell available to the outside world without HTTPS encryption and **secure** credentials!
+> Never make your shell available to the outside world without HTTPS encryption and **secure** credentials!
 > * best security --> allow **only local access**
 >   * optional --> use **VPN** for **local access**
 > * good security --> use `-c <user>:<password>` for `.htaccess` request credentials!
