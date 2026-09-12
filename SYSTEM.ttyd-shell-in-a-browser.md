@@ -12,8 +12,8 @@ There are a couple of web-shell tools available, like [shellinabox](https://gith
 ## Install TTYD as a snap
 
 * Install ttyd from snapstore:  `sudo snap install ttyd --classic`
-  - Run quick test on host, issue command: `ttyd bash`
-  - Access shell in browser `http://localhost:7681`
+  - Run quick local test on host, issue command: `ttyd bash`
+  - Access shell in local browser `http://localhost:7681`
 
 ### Options
 
