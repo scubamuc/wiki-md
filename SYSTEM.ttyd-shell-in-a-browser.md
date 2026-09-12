@@ -113,14 +113,10 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
 ```bash
   #!/bin/bash
 ##############################################################
-# start ttyd #
+# start TTYD as $USER #
 ##############################################################
 ## for added security, request user password in shell
 ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
-## simple start-up in shell
-# ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' bash
-## for single shell command at start-up
-# ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' top
 ```
 * make script executable `chmod +x ~/bin/StartTTYD.sh`
 * edit root crontab: `sudo crontab -e`
