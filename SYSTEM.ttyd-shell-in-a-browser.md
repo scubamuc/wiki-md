@@ -60,7 +60,7 @@ USAGE:
   * `-O` check origin  
   * `-m 1` allow only 1 client  
   * `-c` request (basic auth) credentials on connect (replace `<user>`:`<password>` with your own **secure** credentials)
-    * **NOTE**: these are HTTP access (`.htaccess`) credentials and not *system-user* credentials!
+    * **NOTE**: these are HTTP access-user (`.htaccess`) credentials and not *system-user* credentials!
   * `-t fontSize=16` ⟶ change font size to 16 for better reading
 
 Issue command in shell:
@@ -69,7 +69,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 ```
 Added shell password request, issue command in shell:
 ```
-ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
+ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
 ```
 
 > [!CAUTION]
@@ -95,15 +95,16 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
 > 2. [systemd user service](https://linuxvox.com/blog/automatically-run-a-program-on-startup-under-linux-ubuntu/#optional-using-systemd-user-services-no-root-required), as user (*complicated to setup!*)
 > 3. Root cronjob start-up as user (*authors preference, example below*)
 
-#### Create Root cronjob to start-up as user
+#### Create Root cronjob to start-up as system user
+
+* edit root crontab: `sudo crontab -e`
+* add crontab `@reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
+  * be aware, replace `<user>` with htaccess-user name and `<sysuser>` with your system user name
 
 ```bash
   @reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>
 ```
 
-* edit root crontab: `sudo crontab -e`
-* add crontab `@reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
-  * be aware, replace `<user>` with access-user name and `<sysuser>` with your system user name
 
 ----
 ----
