@@ -94,8 +94,9 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
 > 1. [systemd service](https://linuxvox.com/blog/automatically-run-a-program-on-startup-under-linux-ubuntu/#method-1-using-systemd-recommended-for-services), as root (*bad idea!*)
 > 2. [systemd user service](https://linuxvox.com/blog/automatically-run-a-program-on-startup-under-linux-ubuntu/#optional-using-systemd-user-services-no-root-required), as user (*complicated to setup!*)
 > 3. Root cronjob start-up as user (*authors preference, example below*)
+> 4. Root cronjob to execute a script to start-up as user (*example below*)
 
-#### Create Root cronjob to start-up as system user
+#### Create root cronjob to start-up as system user
 
 * edit root crontab: `sudo crontab -e`
 * add crontab `@reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
@@ -104,6 +105,26 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
 ```bash
   @reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>
 ```
+
+#### Create root cronjob to execute a user-script to start-up as user
+
+* create a bash script `StartTTYD.sh` in user /bin directory:
+`nano ~/bin/StartTTYD.sh`
+```bash
+  #!/bin/bash
+##############################################################
+# start ttyd #
+##############################################################
+## for added security, request user password in shell
+ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
+## simple start-up in shell
+# ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' bash
+## for single shell command at start-up
+# ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' top
+```
+* make script executable `chmod +x ~/bin/StartTTYD.sh`
+* edit root crontab: `sudo crontab -e`
+* add crontab `@reboot su - <USER> /home/<USER>/bin/StartTTYD.sh` (be aware, replace `<USER>` with your system username, full path is required)
 
 
 ----
