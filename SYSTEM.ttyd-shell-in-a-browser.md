@@ -96,7 +96,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
 > 3. Root cronjob start-up as user (*authors preference, example below*)
 > 4. Root cronjob to execute a script to start-up as user (*example below*)
 
-#### Create root cronjob to start-up as system user
+#### Create root cronjob to start-up as user
 
 * edit root crontab: `sudo crontab -e`
 * add crontab `@reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
@@ -106,7 +106,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <sysuser>
   @reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>
 ```
 
-#### Create root cronjob to execute a user-script to start-up as user
+#### Create root cronjob to execute a shell-script to start-up as user
 
 * create a bash script `StartTTYD.sh` in user /bin directory:
 `nano ~/bin/StartTTYD.sh`
