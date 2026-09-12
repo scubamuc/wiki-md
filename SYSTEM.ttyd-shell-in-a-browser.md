@@ -68,7 +68,7 @@ Issue command in shell:
 ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 ```
 > [!CAUTION]
-> ### Safety first
+> ### Security first
 > Never make this available to the outside world without HTTPS encryption and **secure** credentials!
 > * best security --> allow only local access
 >   * optional --> use a VPN for local access
@@ -76,7 +76,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 
 
 > [!NOTE]
-> ### encryption
+> ### SSL Encryption (HTTPS)
 > For HTTPS encryption use a reverse proxy to forward host http on port 8290 to https, blocking common exploits, enabling websockets support and activating access lists!
 > Enable / disable the host on demand!
 
