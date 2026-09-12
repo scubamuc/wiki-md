@@ -7,7 +7,7 @@
 
 In some situations you may need to access your local shell remotely only to find you're caught behind restrictive corporate firewalls where you're unable to VPN or SSH into your network, having only HTTPS available you're certainly stuck, unless you are able to connect to your shell over HTTPS in Nextcloud within a browser.
 
-There are a couple of web-shell tools available, like [shellinabox](https://github.com/shellinabox/shellinabox) (development ceased ages ago) [WEtty](https://github.com/butlerx/wetty) (Snap discontinued) and [TTYD](https://github.com/tsl0922/ttyd). While SIAB was my go-to tool, there were security concerns. Being a snap user involved in the [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) community, I required a simple quick secure snap setup, to get up and running in minutes and as an added bonus, integrate shell access into my Nextcloud snap instance.
+There are a couple of web-shell tools available, like [shellinabox](https://github.com/shellinabox/shellinabox) (development ceased ages ago) [WEtty](https://github.com/butlerx/wetty) (Snap discontinued) and [TTYD](https://github.com/tsl0922/ttyd) (active development available as snap). While SIAB was my go-to tool, there were security concerns. Being a snap user involved in the [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) community, I required a simple quick secure snap setup, to get up and running in minutes and as an added bonus, integrate shell access into my Nextcloud snap instance.
 
 ## Install TTYD as a snap
 
