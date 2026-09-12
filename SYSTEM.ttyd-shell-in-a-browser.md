@@ -102,7 +102,8 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
 ```
 
 * edit root crontab: `sudo crontab -e`
-* add crontab `@reboot ttyd -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>` (be aware, replace <user> with access user name and `<sysuser>` with your system user name)
+* add crontab `@reboot ttyd -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
+  * be aware, replace `<user>` with access-user name and `<sysuser>` with your system user name
 
 ----
 ----
