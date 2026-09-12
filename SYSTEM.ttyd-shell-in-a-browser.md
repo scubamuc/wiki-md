@@ -98,11 +98,11 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
 #### Create Root cronjob to start-up as user
 
 ```bash
-  @reboot ttyd -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>
+  @reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>
 ```
 
 * edit root crontab: `sudo crontab -e`
-* add crontab `@reboot ttyd -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
+* add crontab `@reboot ttyd -t fontSize=16 -p 8290 -W -O -m 1 -c <user>:<password> su - <sysuser>`
   * be aware, replace `<user>` with access-user name and `<sysuser>` with your system user name
 
 ----
