@@ -67,13 +67,20 @@ Issue command in shell:
 ```
 ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 ```
+For added shell password request, issue command in shell:
+```
+ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
+```
+
 > [!CAUTION]
 > ### Security first
-> Never make this available to the outside world without HTTPS encryption and **secure** credentials!
-> * best security --> allow only local access
->   * optional --> use a VPN for local access
-> * good security --> use a reverse proxy enabling/disabling the host on demand!
-
+> Never make you shell available to the outside world without HTTPS encryption and **secure** credentials!
+> * best security --> allow **only local access**
+>   * optional --> use **VPN** for **local access**
+> * good security --> use `-c <user>:<password>` for `.htaccess` request credentials!
+>   * optional --> use reverse proxy access lists!
+>   * optional --> connect as "dummy-user" and switch user on connect `su - myuser`!
+>   * optional --> use a reverse proxy to enable/disable the host on demand!
 
 > [!NOTE]
 > ### SSL Encryption (HTTPS)
