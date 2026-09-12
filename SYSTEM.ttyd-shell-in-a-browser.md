@@ -67,7 +67,7 @@ Issue command in shell:
 ```
 ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> bash
 ```
-For added shell password request, issue command in shell:
+Added shell password request, issue command in shell:
 ```
 ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c <user>:<password> su - <user>
 ```
