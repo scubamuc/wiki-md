@@ -1,4 +1,4 @@
-# TTYD shell in a browser (in your Nextcloud)
+# TTYD shell in a browser -- TTYD shell in Nextcloud
 
 **Links**
 *  [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap)
