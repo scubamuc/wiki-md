@@ -124,8 +124,9 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
 ```
 * make script executable `chmod +x ~/bin/StartTTYD.sh`
 * edit root crontab: `sudo crontab -e`
-* add crontab `@reboot su - <USER> /home/<USER>/bin/StartTTYD.sh` (be aware, replace `<USER>` with your system username, full path is required)
-
+* add crontab `@reboot su - <USER> /home/<USER>/bin/StartTTYD.sh` 
+  * be aware, replace `<USER>` with your system user name,
+  * full path to script is required
 
 ----
 ----
