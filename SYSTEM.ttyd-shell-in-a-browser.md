@@ -1,9 +1,11 @@
 # TTYD shell in a browser -- TTYD shell in Nextcloud
 
 **Links**
-*  [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap)
 *  [TTYD GitHub](https://github.com/tsl0922/ttyd)
-   * [TTYD-wiki](https://github.com/tsl0922/ttyd/wiki)
+   * [TTYD Wiki](https://github.com/tsl0922/ttyd/wiki)
+*  [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap)
+   * [Nextcloud snap Wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki)
+*  [Snapstore](https://snapcraft.io/)
 
 In some situations you may need to access your local shell remotely only to find you're caught behind restrictive corporate firewalls where you're unable to VPN or SSH into your network, having only HTTPS available you're certainly stuck, unless you are able to connect to your shell over HTTPS in Nextcloud within a browser.
 
