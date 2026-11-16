@@ -142,6 +142,20 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
 </p>
 
 ----
+# NetBase better solution!
+
+shortly after having created this documentation I came accross an extremely secure Nextcloud-snap-ready community developed app taking security issues into account:
+
+https://apps.nextcloud.com/apps/netbase
+
+## perfectly integrated Nextcloud app;
+<img width="1743" height="735" alt="grafik" src="https://github.com/user-attachments/assets/e98d00b5-604c-433e-ad60-d11ae1d08b82" />
+
+
+
+https://github.com/ktec-nc-apps/NetBase
+
+
 ----
 
 **Links**
