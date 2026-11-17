@@ -4,7 +4,7 @@ In some situations you may need to access your local shell remotely only to find
 
 # NetBase
 
-[NetBase](https://apps.nextcloud.com/apps/netbase) is a community developed app, offering a complete set of networking tools including SSH/Telnet and direct secure shell support from within your Nextcloud interface:
+[NetBase](https://apps.nextcloud.com/apps/netbase) is a community app, offering a complete set of networking tools including SSH/Telnet and direct secure shell support from within your Nextcloud interface:
 
 ## Install [NetBase](https://apps.nextcloud.com/apps/netbase) from the Nextcloud app store 
 
