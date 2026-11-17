@@ -2,7 +2,7 @@
 
 In some situations you may need to access your local shell remotely only to find you're caught behind restrictive corporate firewalls where you're unable to VPN or SSH into your network, having only HTTPS available you're certainly stuck, unless you are able to connect to your local shell over HTTPS from within Nextcloud.
 
-# NetBase
+# NetBase, Nextcloud network console
 
 [NetBase](https://apps.nextcloud.com/apps/netbase) is a community app with a complete set of networking tools including SSH/Telnet and direct secure shell support from within your Nextcloud interface. **Install [NetBase](https://apps.nextcloud.com/apps/netbase) from the Nextcloud app store **
 
@@ -13,7 +13,7 @@ NetBase is a perfectly integrated Nextcloud app and runs out-of-the-box non Next
 </p>
 
 ----
-# TTYD
+# TTYD shell in a browser
 
 There are a couple of other web-shell tools available, like [shellinabox](https://github.com/shellinabox/shellinabox) (development ceased ages ago) or [WEtty](https://github.com/butlerx/wetty) (snap discontinued) and recommended [TTYD](https://github.com/tsl0922/ttyd) (active development available as snap) a simple quick secure snap setup to get up and running in minutes.
 
