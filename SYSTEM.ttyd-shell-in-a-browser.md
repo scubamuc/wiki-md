@@ -4,11 +4,13 @@ In some situations you may need to access your local shell remotely only to find
 
 # NetBase
 
-[NetBase](https://apps.nextcloud.com/apps/netbase) is a community app, offering a complete set of networking tools including SSH/Telnet and direct secure shell support from within your Nextcloud interface. **Install [NetBase](https://apps.nextcloud.com/apps/netbase) from the Nextcloud app store **
+[NetBase](https://apps.nextcloud.com/apps/netbase) is a community app with a complete set of networking tools including SSH/Telnet and direct secure shell support from within your Nextcloud interface. **Install [NetBase](https://apps.nextcloud.com/apps/netbase) from the Nextcloud app store **
 
 NetBase is a perfectly integrated Nextcloud app and runs out-of-the-box non Nextcloud snap;
 
-<img width="1743" height="735" alt="grafik" src="https://github.com/user-attachments/assets/e98d00b5-604c-433e-ad60-d11ae1d08b82" />
+<p align="center" width="100%">
+    <img width="75%" src="https://github.com/user-attachments/assets/bb7a86b2-6dcd-4353-a441-75220446f42b" alt="NetBase in Nextcloud snap">
+</p>
 
 ----
 # TTYD
