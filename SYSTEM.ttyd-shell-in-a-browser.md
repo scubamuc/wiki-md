@@ -1,8 +1,20 @@
-# TTYD shell in a browser -- TTYD shell in Nextcloud
+# NetBase, SSH/TTY shell in Nextcloud -- TTYD shell in a browser
 
-In some situations you may need to access your local shell remotely only to find you're caught behind restrictive corporate firewalls where you're unable to VPN or SSH into your network, having only HTTPS available you're certainly stuck, unless you are able to connect to your shell over HTTPS in Nextcloud within a browser.
+In some situations you may need to access your local shell remotely only to find you're caught behind restrictive corporate firewalls where you're unable to VPN or SSH into your network, having only HTTPS available you're certainly stuck, unless you are able to connect to your local shell over HTTPS from within Nextcloud.
 
-There are a couple of web-shell tools available, like [shellinabox](https://github.com/shellinabox/shellinabox) (development ceased ages ago) [WEtty](https://github.com/butlerx/wetty) (Snap discontinued) and [TTYD](https://github.com/tsl0922/ttyd) (active development available as snap). While SIAB was my go-to tool, there were security concerns. Being a snap user involved in the [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) community, I required a simple quick secure snap setup, to get up and running in minutes and as an added bonus, integrate shell access into my Nextcloud snap instance.
+# NetBase
+
+[NetBase](https://apps.nextcloud.com/apps/netbase) is a community developed app, offering a complete set of networking tools including SSH/Telnet and direct secure shell support from within your Nextcloud interface:
+
+## Install [NetBase](https://apps.nextcloud.com/apps/netbase) from the Nextcloud app store 
+
+### perfectly integrated Nextcloud app, runs out-of-th-box;
+<img width="1743" height="735" alt="grafik" src="https://github.com/user-attachments/assets/e98d00b5-604c-433e-ad60-d11ae1d08b82" />
+
+----
+# TTYD
+
+There are a couple of other web-shell tools available, like [shellinabox](https://github.com/shellinabox/shellinabox) (development ceased ages ago) or [WEtty](https://github.com/butlerx/wetty) (snap discontinued) and recommended [TTYD](https://github.com/tsl0922/ttyd) (active development available as snap) a simple quick secure snap setup to get up and running in minutes.
 
 ## Install TTYD as a snap
 
@@ -120,7 +132,6 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
   * full path to script is required
 
 ----
-----
 
 # TTYD web-shell in your Nextcloud
 
@@ -142,23 +153,9 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
 </p>
 
 ----
-# NetBase better solution!
-
-shortly after having created this documentation I came accross an extremely secure Nextcloud-snap-ready community developed app taking security issues into account:
-
-## [NetBase](https://apps.nextcloud.com/apps/netbase)
-
-### perfectly integrated Nextcloud app;
-<img width="1743" height="735" alt="grafik" src="https://github.com/user-attachments/assets/e98d00b5-604c-433e-ad60-d11ae1d08b82" />
-
-
-
-https://github.com/ktec-nc-apps/NetBase
-
-
-----
 
 **Links**
+*  [NetBase GutHub](https://github.com/ktec-nc-apps/NetBase)
 *  [TTYD GitHub](https://github.com/tsl0922/ttyd)
    * [TTYD Wiki](https://github.com/tsl0922/ttyd/wiki)
 *  [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap)
