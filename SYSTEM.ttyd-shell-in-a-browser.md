@@ -156,7 +156,8 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
 ----
 
 **Links**
-*  [NetBase GutHub](https://github.com/ktec-nc-apps/NetBase)
+*  [NetBase GitHub](https://github.com/ktec-nc-apps/NetBase)
+   * [NetBase app](https://apps.nextcloud.com/apps/netbase)
 *  [TTYD GitHub](https://github.com/tsl0922/ttyd)
    * [TTYD Wiki](https://github.com/tsl0922/ttyd/wiki)
 *  [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap)
