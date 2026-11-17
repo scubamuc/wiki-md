@@ -133,7 +133,7 @@ ttyd -t fontSize=16 -p 8290 -O -W -m 1 -c user:'password' su - user
 
 ----
 
-# TTYD web-shell in your Nextcloud
+## TTYD web-shell Nextcloud snap integration
 
 1.  Install the [External sites app](https://apps.nextcloud.com/apps/external) in Nextcloud:
     * Add your web-shell to external sites
