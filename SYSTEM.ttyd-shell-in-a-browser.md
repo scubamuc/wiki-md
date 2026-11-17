@@ -8,7 +8,8 @@ In some situations you may need to access your local shell remotely only to find
 
 ## Install [NetBase](https://apps.nextcloud.com/apps/netbase) from the Nextcloud app store 
 
-### perfectly integrated Nextcloud app, runs out-of-th-box;
+**perfectly integrated Nextcloud app, runs out-of-the-box;**
+
 <img width="1743" height="735" alt="grafik" src="https://github.com/user-attachments/assets/e98d00b5-604c-433e-ad60-d11ae1d08b82" />
 
 ----
